@@ -1,10 +1,14 @@
 const img = document.getElementById('img')
 const buttons = document.getElementById('buttons')
 let colorindex = 0;
+let setIntervalID = null
+
+
+
 const trafficlight = ( event ) => {
-   
+    stopautomatic();
     tutnOn[event.target.id]();
-   
+     
 }
 
 const nextindex = () => {
@@ -21,11 +25,16 @@ const changecolor = () => {
     tutnOn[color]();
     nextindex();
 }
+
+const stopautomatic = () => {
+    clearInterval(setIntervalID)
+}
+
 const tutnOn = {
     'red':      () => img.src = "./semáforo/img/vermelho.png",
     'yellow':   () => img.src = "./semáforo/img/amarelo.png",
     'green':    () => img.src = "../semáforo/img/verde.png",
-    'automatic':() => setInterval(changecolor,1000),
+    'automatic':() => setIntervalID = setInterval(changecolor,1000),
     
 }
 
