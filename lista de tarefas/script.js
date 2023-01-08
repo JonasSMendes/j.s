@@ -5,10 +5,11 @@ const input = document.querySelector('input');
 function adicionar(e){
    
  if(e.key === 'Enter'){
-    
-      let newli = document.createElement('li')
+    //adiconar o li na lista
+      const newli = document.createElement('li')
       newli.innerHTML = input.value
       ul.appendChild(newli)
+    //limpado o campo de texto
       input.value = ""
 }
 
