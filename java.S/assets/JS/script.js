@@ -868,7 +868,7 @@ if(input.getAttribute('type') === 'text'){
 
 }
 */
-
+/*
 function clicou(){
     const body = document.querySelector('body')
 
@@ -878,3 +878,47 @@ function clicou(){
 
 }
 
+function clicou(){
+    const button = document.querySelector('button')
+
+
+    if (button.classList.contains('azul')){
+        button.classList.remove('azul')
+        button.classList.add ('amarelo')
+    }else{
+        button.classList.add('azul')
+        button.classList.remove('amarelo')
+    }
+
+    console.log(button.classList)
+
+    
+}
+
+*/
+/*
+function apertou (){
+    console.log('APERTOU')
+}
+
+function segurou (){
+    console.log('SEGUROU')
+}
+
+function soltou (){
+    console.log('SOLTOU')
+}
+*/
+
+/*
+function soltou (event){
+    console.log('TECLADO APERTADO ' + event.code)
+    console.log('shift ' + event.shiftKey);
+    console.log('---')
+
+}
+
+const input = document.querySelector('input')
+
+input.addEventListener('keyup', soltou)
+*/
