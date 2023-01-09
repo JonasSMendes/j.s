@@ -9,7 +9,7 @@ const images = [
     { 'id': '6' , 'url': './img/ippo.png' },
 ]
 
-const container = document.querySelector('#container-item')
+const containerItems = document.querySelector('#container-item')
 
 const loadImages = ( images, container ) => {
     images.forEach( image  => {
@@ -21,6 +21,21 @@ const loadImages = ( images, container ) => {
     })
 }
 
-loadImages (images, container)
+loadImages (images, containerItems);
 
+let items = document.querySelectorAll('.item');
+
+const previous = () => {
+    containerItems.appendChild(items[0]);
+    items = document.querySelectorAll('.item');
+}
+
+const next = () => {
+    const lastitem = items [items.length - 1]
+    containerItems.insertBefore( lastitem, items[0])
+    items = document.querySelectorAll('.item');
+}
+
+document.querySelector('#previous').addEventListener('click',previous )
+document.querySelector('#next').addEventListener('click', next)
 
