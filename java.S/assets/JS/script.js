@@ -922,3 +922,30 @@ const input = document.querySelector('input')
 
 input.addEventListener('keyup', soltou)
 */
+
+    function pirulito () {
+        const teste = document.querySelector('#teste')
+        const ul = teste.querySelector('ul')
+
+        ul.innerHTML += '<li> item alterado </li>'
+    }
+
+    let botao = document.querySelector('.botao')
+
+    botao.addEventListener('click', () => {
+        pirulito()
+    })
+
+
+const ul = document.querySelector('#muda')
+const input = document.querySelector('#input')
+
+function adicionar(a){
+    if(a.keyup === 'Enter'){
+         
+    }
+}
+
+input.addEventListener('a', ()=> {
+    input()
+} )
