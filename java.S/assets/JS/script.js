@@ -925,27 +925,41 @@ input.addEventListener('keyup', soltou)
 
     function pirulito () {
         const teste = document.querySelector('#teste')
-        const ul = teste.querySelector('ul')
+        const ul = teste.querySelector('#ul')
 
-        ul.innerHTML += '<li> item alterado </li>'
+        const newlist = document.createElement('ul')
+
+
+        for(i = 0 ; i < 5 ; i++){
+            let newli = document.createElement('li')
+            newli.innerHTML='item novo' + i
+            newlist.append(newli)
+        }
+
+        ul.before(newlist)
     }
-
+/*
     let botao = document.querySelector('.botao')
 
     botao.addEventListener('click', () => {
         pirulito()
     })
-
-
+*/
+/*
 const ul = document.querySelector('#muda')
 const input = document.querySelector('#input')
 
-function adicionar(a){
-    if(a.keyup === 'Enter'){
-         
+function adicionar(e){
+
+
+    if(e.key === 'Enter'){
+         const newli = document.createElement('li')
+
+         newli.innerHTML = input.value
+         ul.appendChild(newli)
+         input.value = ""
     }
 }
 
-input.addEventListener('a', ()=> {
-    input()
-} )
+input.addEventListener('keyup', adicionar)
+*/
