@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./java.s/script.js" ></script>
+    
+    <title>jogo do mario</title>
+
+</head>
+<body>
+    
+<div class="game-bord">
+
+    <img src="./img/clouds.png" class="clouds" alt="">
+
+    <img src="./img/mario.gif" class="mario"  alt="">
+
+    <img class="pipe" src="./img/pipe.png" alt="">
+
+</div>
+ 
+
+
+</body >
+<script>
+    
+    const mario = document.querySelectorAll('.mario')[0];
+    const pipe = document.querySelectorAll('.pipe')[0];
+    const jump = () => {
+        mario.classList.add('jump');
+
+        setTimeout(() => {
+            
+            mario.classList.remove('jump')
+
+        }, 600);
+
+        const loop = setInterval(() => {
+
+            const pipePosition = pipe.offsetLeft;
+            const marioposition = +window.getComputedStyle(mario).bottom.replace("px", '');
+             
+
+            if(pipePosition <= 120 && pipePosition > 0 &&marioposition < 80 ){
+                pipe.style.animation = 'none';
+                pipe.style.left = `${pipePosition}px`; 
+
+                mario.style.animation = 'none';
+                mario.style.bottom = `${marioposition }px`; 
+
+
+                mario.src = './img/game-over.png'
+                mario.style.width = "75px"
+                mario.style.marginLeft = '50px'
+
+                clearInterval(loop);
+            }
+
+        },10)
+
+    }
+    document.addEventListener('keydown', jump);
+
+</script>
+</html>
