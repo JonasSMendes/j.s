@@ -922,7 +922,7 @@ const input = document.querySelector('input')
 
 input.addEventListener('keyup', soltou)
 */
-
+/*
     function pirulito () {
         const teste = document.querySelector('#teste')
         const ul = teste.querySelector('#ul')
@@ -938,6 +938,7 @@ input.addEventListener('keyup', soltou)
 
         ul.before(newlist)
     }
+    */
 /*
     let botao = document.querySelector('.botao')
 
@@ -963,3 +964,20 @@ function adicionar(e){
 
 input.addEventListener('keyup', adicionar)
 */
+
+const input = document.querySelector('input')
+const ul = document.querySelector('ul')
+
+function adicionar(e){
+
+    if(e.key === 'Enter'){
+        let newli = document.createElement('li')
+        
+        newli.innerHTML= input.value
+        ul.appendChild(newli)
+        input.value= ""
+
+    }
+    
+}
+input.addEventListener('keyup', adicionar)
