@@ -67,3 +67,59 @@ h1{
         height: 350px;
     }
 }
+
+/* tela 2 dos reinos*/
+
+.container_reinos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reinos_choice{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.reinos_choice p{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.container_reinos img{
+    width: 450px;
+    height: 450px;
+}
+.container_reinos img:hover{
+    width: 500px;
+    height: 500px;
+    animation:mapa_maior 500ms linear ;
+    
+}
+
+@keyframes mapa_maior{
+    0%{
+        width: 450px;
+        height: 450px;
+
+    }
+    50%{
+        width: 480px;
+        height: 480px;
+    }
+    80%{
+        width: 500px;
+        height: 500px;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+    }
+}
+
