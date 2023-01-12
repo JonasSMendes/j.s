@@ -964,7 +964,7 @@ function adicionar(e){
 
 input.addEventListener('keyup', adicionar)
 */
-
+/*
 const input = document.querySelector('input')
 const ul = document.querySelector('ul')
 
@@ -981,3 +981,90 @@ function adicionar(e){
     
 }
 input.addEventListener('keyup', adicionar)
+*/
+
+//orientação a objetos
+
+// --programação orientada a objetos -- OOP - eng / POO - br
+// --programção funcional  FP - eng / PF - br
+// --programação procedural / prototype-basead procedural language
+
+
+//claases 
+
+class Person {
+
+    _age = "(sem valor)";
+    steps = 0;
+
+    constructor(firtName, lastName){
+        this.firtName = firtName
+        this.lastName = lastName
+    }
+    takestep(){
+        this.steps++;
+    }
+/*
+    setAge(newage){
+        if (typeof newage == "number" && newage >= 18){
+
+            this.age = newage
+            console.log('seu acesso foi permitido,bem vindo!')
+
+        }else if( newage < 18){
+
+            console.log('você é menor de idade,seu acesso foi negado ')
+            
+        } else if( newage != !Number){
+
+            console.log('erro! (só Numeros permitidos)')
+            
+        }
+        
+    }*/
+    get fullName(){
+        return `${this.firtName} ${this.lastName}`
+    }
+
+    get age(){
+        return this._age
+    }
+
+    set age(x){
+        if(typeof x == "number" &&  x >= 18){
+            this._age = x
+        }
+    }
+
+}
+
+
+
+let p1 = new Person('joao','algusto' );
+let p2 = new Person('maria','luna' );
+let p3 = new Person('pedro', 'duarte');
+
+p1.age = "lola";
+
+console.log(`${p1.fullName} tem ${p1.age} de idade `)
+
+/*
+p1.takestep();
+
+console.log(`passos de ${p1.name} forão de ${p1.steps}`);
+console.log(`passos de ${p2.name} forão de ${p2.steps}`);
+*/
+/*
+p1.age = 21
+
+console.log(`p1 = ${p1.name} tem ${p1.age} anos.`)
+console.log(`p2 = ${p2.name} tem ${p2.age} anos.`)
+console.log(`p3 = ${p3.name} tem ${p3.age} anos.`)
+*/
+
+
+
+
+
+
+//funçoes/objetos
