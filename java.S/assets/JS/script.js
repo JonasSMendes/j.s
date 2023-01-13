@@ -991,7 +991,7 @@ input.addEventListener('keyup', adicionar)
 
 
 //claases 
-
+/*
 class Person {
 
     _age = "(sem valor)";
@@ -1022,6 +1022,7 @@ class Person {
         }
         
     }*/
+    /*
     get fullName(){
         return `${this.firtName} ${this.lastName}`
     }
@@ -1044,9 +1045,13 @@ let p1 = new Person('joao','algusto' );
 let p2 = new Person('maria','luna' );
 let p3 = new Person('pedro', 'duarte');
 
-p1.age = "lola";
+p1.age = 40;
 
-console.log(`${p1.fullName} tem ${p1.age} de idade `)
+console.log(`${p1.fullName} tem ${p1.age} anos de idade `)
+
+
+
+*/
 
 /*
 p1.takestep();
@@ -1061,10 +1066,90 @@ console.log(`p1 = ${p1.name} tem ${p1.age} anos.`)
 console.log(`p2 = ${p2.name} tem ${p2.age} anos.`)
 console.log(`p3 = ${p3.name} tem ${p3.age} anos.`)
 */
+/*
+class Person {
+
+    age = 0
+
+    constructor(name){
+        this.name = name;
+    }
+    sayHi(){
+        console.log(`${this.name} Diz ola`)
+    }
+}
+
+class student extends Person  {
 
 
+    constructor(name, id){
+        super(name)
+        this.id = id
+       
+    }
+    sayHello(){
+        super.sayHi()     
+    }
+
+}
+
+let p1 = new student("jonas", 56875689)
+p1.age = 20
+p1.sayHello()
+
+console.log(`${p1.name} que tem ${p1.age} anos, com o id de #${p1.id}`)
+
+let p2 = new Person("pedro", 56748499)
+p2.age = 30
+p2.sayHi()
+
+console.log(`${p2.name} que tem ${p2.age} anos, com o id de #${p2.id}`)
 
 
+*/
+/*
+class Person{
 
+    static hands = 2
+    age = 0
+
+    constructor(name){
+        this.name = name
+    }
+    sayhi(){
+        console.log(`oi eu sou ${this.name} e tenho ${Person.hands} mãos`)
+    }
+
+    static sayHi(){
+        console.log('oi')
+    }
+
+}
+
+Person.sayHi()
+
+let p1 = new Person ('jonas');
+p1.sayhi()
+*/
+
+class Person{
+
+    age = 0
+
+    constructor(name){
+        this.name = name
+    }
+}
+
+
+function creatPerson (name , age){
+    let p = new Person(name)
+    p.age = age
+    return p;
+}
+
+let p1 = creatPerson('jonas' , 21);
+
+console.log(`${p1.name} tem ${p1.age} anos`)
 
 //funçoes/objetos
