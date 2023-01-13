@@ -13,7 +13,17 @@ class Form{
     additem(item){
         this.items.push(item)
     }
+    render(){
+        let formElement = document.createElement('form')
+        formElement.setAttribute('method', this.method)
+        formElement.setAttribute('action', this.method)
 
+        for(let i in this.items){
+            this.items[i].render(formElement)
+        }
+
+        this.container.appendChild(formElement)
+    }
     
 }
 
@@ -38,6 +48,14 @@ class input {
             throw new Error(`input "${t}" doens't exist.`) 
         }
     }
+    render(formElement){
+        let el = document.createElement('input')
+        el.type = this.type
+        el.name = this.name
+        el.placeholder = this.label
+        el.required = this.required
+        formElement.appendChild(el)
+    }
 
 }
 
@@ -45,6 +63,13 @@ class Button extends input{
     constructor(label){
         super('', label)
         this.type = 'submit'
+    }
+
+    render(formElement){
+        let el = document.createElement('input')
+        el.type = this.type
+        el.value = this.label
+        formElement.appendChild(el)
     }
 }
 
@@ -73,3 +98,5 @@ let button = new Button('Enviar');
 form.additem(button);
 
 console.log(form.items)
+
+form.render();
