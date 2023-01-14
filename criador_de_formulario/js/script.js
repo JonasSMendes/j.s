@@ -13,6 +13,8 @@ class Form{
     additem(item){
         this.items.push(item)
     }
+
+    
     render(){
         let formElement = document.createElement('form')
         formElement.setAttribute('method', this.method)
@@ -62,7 +64,7 @@ class input {
 class Button extends input{
     constructor(label){
         super('', label)
-        this.type = 'submit'
+        
     }
 
     render(formElement){
@@ -85,9 +87,14 @@ email.type = "email"
 email.reaquired = true
 form.additem(email);
 
+//teste
+let segundoEmail = new input ('email', 'viva la vida')
+
+form.additem(segundoEmail)
+
 //senha
 
-let passworld = new input ('passworld', 'digite su senha')
+let passworld = new input ('passworld', 'digite sua senha')
 passworld.type = 'passworld'
 passworld.required = true
 form.additem(passworld)
@@ -95,6 +102,7 @@ form.additem(passworld)
 //botão
 
 let button = new Button('Enviar');
+button.type = 'submit'
 form.additem(button);
 
 console.log(form.items)

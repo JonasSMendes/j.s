@@ -1131,7 +1131,7 @@ Person.sayHi()
 let p1 = new Person ('jonas');
 p1.sayhi()
 */
-
+/*
 class Person{
 
     age = 0
@@ -1152,4 +1152,36 @@ let p1 = creatPerson('jonas' , 21);
 
 console.log(`${p1.name} tem ${p1.age} anos`)
 
-//funçoes/objetos
+*/
+
+// requisições
+
+//oque é sicrono e assincrono
+
+//sincrono ~sao excutados em uma ordem 
+//assincrono são executados os mesmo tempo
+
+let nome = 'jonas'
+let sobrenome = 'mendes'
+
+let nomeCompleto = nome + sobrenome
+
+/*
+como a web funciona (requisição e resposta)
+request
+->cabeçalho / headers
+->corpo / body
+
+response
+->cabeçalho / headers
+->corpo / body
+*/
+/*
+como funciona API
+API = application programing interface
+
+JSON = javacript object notation
+
+https://jsonplaceholder.typicode.com/posts
+https://jsonplaceholder.typicode.com/users
+*/
