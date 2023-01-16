@@ -1184,4 +1184,16 @@ JSON = javacript object notation
 
 https://jsonplaceholder.typicode.com/posts
 https://jsonplaceholder.typicode.com/users
+
 */
+
+//oque é um callback
+/*
+call back = ligar de volta
+
+*/
+
+document.querySelector('#botao')
+.addEventListener('click', () => (
+    alert('clicou no botão')
+))
