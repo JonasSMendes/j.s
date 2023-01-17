@@ -1204,27 +1204,50 @@ document.querySelector('#botao')
 
 //promese uma função ansincrona//
 
+//GET , POST , PUT ,DELETE
+
 //https://jsonplaceholder.typicode.com/posts
 
-function clicou(){
-    fetch('https://jsonplaceholder.typicode.com/posts')
-        .then((response)=>{
-            return response.json();
-        })
-            .then((json)=>{
-                alert(json[0].title);
-            })
-                .catch((error)=>{
-                    console.log('Deu ruim')
-                    console.log(error)
-                })
-                    .finally(()=>{
-                        alert('acabou tudo')
-                    })
+//let clicou = async () => {} //
+
+async function clicou(){
+
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts')
+    let json = await response.json();
+    alert(`status ${json[0].title}`)
+
+    alert('clicou')
     
+
+   
 }
 
+
+
+//metodo POST
+async function inserir(){
+
+    let response= await fetch('https://jsonplaceholder.typicode.com/posts',{
+        method: 'POST',
+        Headers:{
+            'Content-type':'application/json'
+        },
+        body:JSON.stringify({
+            title:'titulo de teste',
+            body:'corpo de teste',
+            UserId: 3
+        })
+    })
+   let json = await response.json();
+
+        console.log(json);
+   
+        
+}
+
+
 document.querySelector('#botao').addEventListener('click', clicou)
+document.querySelector('#inserir').addEventListener('click', inserir)
 
 
 
