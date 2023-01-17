@@ -1214,8 +1214,14 @@ function clicou(){
             .then((json)=>{
                 alert(json[0].title);
             })
-
-    alert('opa clicou')        
+                .catch((error)=>{
+                    console.log('Deu ruim')
+                    console.log(error)
+                })
+                    .finally(()=>{
+                        alert('acabou tudo')
+                    })
+    
 }
 
 document.querySelector('#botao').addEventListener('click', clicou)
