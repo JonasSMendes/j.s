@@ -1199,18 +1199,23 @@ document.querySelector('#botao')
 ))
 */
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
- // requisição
- 
+
+// requisição
+
+//promese uma função ansincrona//
+
 //https://jsonplaceholder.typicode.com/posts
 
 function clicou(){
     fetch('https://jsonplaceholder.typicode.com/posts')
-    .then((response)=>{
-        return response.json();
-    })
-    .then((json)=>{
-        alert(json[0].title);
-    })
+        .then((response)=>{
+            return response.json();
+        })
+            .then((json)=>{
+                alert(json[0].title);
+            })
+
+    alert('opa clicou')        
 }
 
 document.querySelector('#botao').addEventListener('click', clicou)
