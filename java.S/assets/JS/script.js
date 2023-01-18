@@ -1210,6 +1210,8 @@ document.querySelector('#botao')
 
 //let clicou = async () => {} //
 
+
+//GET
 async function clicou(){
 
     let response = await fetch('https://jsonplaceholder.typicode.com/posts')
