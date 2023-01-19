@@ -1160,12 +1160,12 @@ console.log(`${p1.name} tem ${p1.age} anos`)
 
 //sincrono ~sao excutados em uma ordem 
 //assincrono são executados os mesmo tempo
-
+/*
 let nome = 'jonas'
 let sobrenome = 'mendes'
 
 let nomeCompleto = nome + sobrenome
-
+*/
 /*
 como a web funciona (requisição e resposta)
 request
@@ -1210,7 +1210,7 @@ document.querySelector('#botao')
 
 //let clicou = async () => {} //
 
-
+/*
 //GET
 async function clicou(){
 
@@ -1252,6 +1252,18 @@ document.querySelector('#botao').addEventListener('click', clicou)
 document.querySelector('#inserir').addEventListener('click', inserir)
 
 
+*/
+
+function clicou(e){
+   if(e.keyCode == 13){
+    let Enter = document.getElementById('input').value;
+    const input = document.querySelector('#input')
+    console.log(Enter)
+    
+    input.value=""
+
+   }
+}
 
 
 
