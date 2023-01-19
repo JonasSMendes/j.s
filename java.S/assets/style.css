@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    padding: 6px;
+    background-color: #ccc;
+    border: none;
+}
+
+.azul{
+    background-color: blue;
+    color: antiquewhite;
+}
+.vermelho{
+    background-color: red;
+    color: antiquewhite;
+}
+.verde{
+    background-color: green;
+    color: black;
+}
+#telefone{
+    display: none;
+}
