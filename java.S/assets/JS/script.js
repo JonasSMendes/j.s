@@ -1302,3 +1302,34 @@ function mostra(elemento){
 
 }
 
+let carros = [ 
+    "ferrari", 
+    'corolla', 
+    'uno', 
+    'jeep'
+];
+
+let carro = {
+    nome:'fiat',
+    modelo: 'uno',
+    peso: '800kg',
+    ligado: false,
+    ligar:function(){
+        this.ligado = true
+        console.log('vrumvrum')
+    },
+    acelerar: function(){
+        if(this.ligado == true ){
+            console.log('ririririri')
+        }else{
+            console.log(`o ${this.nome} ${this.modelo} não está ligado`)
+        }
+    }
+};
+console.log(`o modelo: ${carro.modelo}`)
+carro.ligar()
+carro.acelerar()
+
+
+
+
