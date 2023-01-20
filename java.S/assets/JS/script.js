@@ -1295,7 +1295,7 @@ function mostraTelefone(elemento){
 
 }
 */
-
+/*
 function mostra(elemento){
     elemento.style.display = 'none'
     document.getElementById('nav').style.display='inline-block'
@@ -1331,5 +1331,5 @@ carro.ligar()
 carro.acelerar()
 
 
-
+*/
 
