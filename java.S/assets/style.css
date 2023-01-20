@@ -24,3 +24,30 @@ input{
 #telefone{
     display: none;
 }
+.nav{
+    height: 97vh;
+    width: 10%;
+    background-color: #ccc;
+    display: inline-block;
+    padding: 10px;
+    display: none ;
+    
+    
+}
+.nav a {
+    padding: 8px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+#botao{
+    padding: 10px 5px;
+}
+.infos{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
