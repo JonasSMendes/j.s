@@ -16,8 +16,7 @@ aside {
     margin-right:10px;
 }
 #menu-area {
-    display: none;
-    width:200px;
+    width:0px;
     height:100vh;
     background:#ccc;
     overflow-x:hidden;
