@@ -1332,7 +1332,7 @@ carro.acelerar()
 
 
 */
-
+/*
 let dia = 7
 let diaNome =''
 
@@ -1363,5 +1363,28 @@ switch(dia){
         
 }
 document.getElementById('dia').innerHTML=`hoje é ${diaNome}`
+*/
+//for loop
+// for loop aray
 
 
+
+let carros = ['ferrari', 'uno', 'corola', 'jepp','sivic']
+
+let html = '<ul>';
+
+for (let i in carros){
+    html += '<li>'+carros[i] +'</li>'
+}
+
+html += "</ul>"
+
+document.querySelector("#demo").innerHTML= html
+
+
+
+let texto = ""
+
+for(let i = 0;i <= 50; i++){
+    texto = texto + i + '</br>'
+}
