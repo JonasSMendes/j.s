@@ -1369,22 +1369,37 @@ document.getElementById('dia').innerHTML=`hoje é ${diaNome}`
 
 
 
-let carros = ['ferrari', 'uno', 'corola', 'jepp','sivic']
+//let carros = ['ferrari', 'uno', 'corola', 'jepp','sivic']
 
 let html = '<ul>';
-
+/*
 for (let i in carros){
     html += '<li>'+carros[i] +'</li>'
 }
 
 html += "</ul>"
+*/
+
+let c = 0
+
+while(c <= 10){
+
+    html+= `numero ${c} </br>`
+    c++
+}
+
+for (let c = 1; c <= 10; c++){
+    html+=`numero: ${c} </br>`
+}
 
 document.querySelector("#demo").innerHTML= html
 
 
-
+/*
 let texto = ""
 
 for(let i = 0;i <= 50; i++){
     texto = texto + i + '</br>'
 }
+*/
+
