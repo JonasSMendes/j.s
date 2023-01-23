@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    position: absolute;
+    margin-bottom: 400px;
+    width: 900px;
+    
+
+}
+
+.links a{
+    text-decoration: none;
+    padding: 9px 7px;
+    color: #000;
+}
+.linkAzul{
+    background-color: rgb(35, 35, 193);
+    
+}
+.home{
+    align-items: center;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 500px
+}
+.homeImg img{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+}
+.homeDados{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.homeDados input{
+    margin: 20px;
+    padding: 10px;
+    
+}
+
