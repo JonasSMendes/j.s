@@ -13,7 +13,6 @@
     background-color: #b7ccc1;
     background-image: linear-gradient(45deg, #b7ccc1 0%, #e9e8c7 100%);
     
-
 }
 .icone{
     display: flex;
@@ -23,15 +22,16 @@
     position: absolute;
     margin-bottom: 400px;
     width: 900px;
-    
-
 }
-
 .links a{
     text-decoration: none;
-    padding: 10px 9px;
+    padding: 11px 13px;
     color: #000;
     border-radius: 8px;
+}
+.links a:hover{
+    color: #ccc;
+    
 }
 .linkAzul{
     background-color: rgb(35, 35, 193);
