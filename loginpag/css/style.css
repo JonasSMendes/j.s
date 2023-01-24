@@ -50,6 +50,10 @@
     width: 1000px;
     height: 500px
 }
+.homeImg{
+    display: flex;
+    
+}
 .homeImg img{
     border-radius: 10px;
     display: flex;
@@ -59,8 +63,10 @@
     height: 500px;
 }
 .homeDados{
-    
+    width: 300px;
+    position: absolute;
     margin-top: 60px;
+    margin-left: 550px;
     display: flex;
     justify-content: center;
     flex-direction: column;
