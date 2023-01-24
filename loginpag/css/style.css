@@ -10,7 +10,10 @@
     flex-direction:row;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
+    background-color: #b7ccc1;
+    background-image: linear-gradient(45deg, #b7ccc1 0%, #e9e8c7 100%);
+    
+
 }
 .icone{
     display: flex;
@@ -26,37 +29,73 @@
 
 .links a{
     text-decoration: none;
-    padding: 9px 7px;
+    padding: 10px 9px;
     color: #000;
+    border-radius: 8px;
 }
 .linkAzul{
     background-color: rgb(35, 35, 193);
     
 }
+.linkAzul a{
+    color:#000;
+}
 .home{
+    border-radius: 10px;
+    box-shadow: 2px 0px 10px black;
     align-items: center;
-    background-color: #ccc;
+    background-color: #fff;
     display: flex;
     align-items: center;
     width: 1000px;
     height: 500px
 }
 .homeImg img{
+    border-radius: 10px;
     display: flex;
     align-items: center;
     align-items: center;
-    width: 600px;
+    width: 100%;
     height: 500px;
 }
 .homeDados{
+    
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
     
 }
 .homeDados input{
     margin: 20px;
     padding: 10px;
+    border:none;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
     
 }
+.homeDados h4{
+    margin-left: 19px;
+}
+.butom{
+    margin-left: 19px;
+    text-decoration: none;
+    color: #000;
+    background-color:#ccc; 
+    font-size: 20px;
+    padding: 7px 9px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+#open{
+    margin-left: 170px;
+    position: absolute;
+    cursor: pointer;
+    transition:all ease .3s;
+}
+
+
+
 

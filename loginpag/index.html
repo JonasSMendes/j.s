@@ -8,7 +8,8 @@
 </head>
 <body>
 <main class="container">
-    <nav class="icone">
+    
+<nav class="icone">
         <div class="logo">
         <img src="./css/img/criatividade.png" width="50px" alt="">
     </div>
@@ -16,24 +17,31 @@
         <a class="linkAzul" href="">SIGN</a>
         <a href="">LOGIN</a>
     </div>
-    </nav>
-    <div class="home">
+</nav>
 
-        <div class="homeImg">
+<div onclick="abrir()" id="open"><img src="./css/img/toque.png" width="50px" alt=""></div>
+
+<div class="home">
+
+
+    <div id="homeImg" class="homeImg">
             <img src="./css/img/tela4.png" alt="">
-        </div>
+    </div>
 
-        <div class="homeDados">
+    <div id="homeDados" class="homeDados">
+
             <h4>FULL NAME</h4>
             <input type="text" placeholder="enter your full name"> 
             <h4>PASSWORLD</h4>
             <input type="password" placeholder="enter your passaworld">
             <h4>EMAIL</h4>
             <input type="email" placeholder="enter yout email">
-
-            <a href="">SING UP</a>
+        <div>
+            <input type="checkbox">i gree all statement in <a href="">term of service</a>
         </div>
+            <a class="butom" href="">SING UP</a>
     </div>
+</div>
 </main>
     <script src="./js/script.js"></script>
 </body>
