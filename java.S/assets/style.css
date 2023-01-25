@@ -51,3 +51,29 @@ input{
     flex-direction: column;
 
 }
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+#exemplo{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+.verde{
+    background-color: green;
+    color: antiquewhite;
+}
+.azul{
+    background-color: blue;
+    color: beige;
+}
+.vermelho{
+    background-color: red;
+    color: aliceblue;
+}
+.amarelo{
+    background-color: yellow;
+    color: #000;
+}
