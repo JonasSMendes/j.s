@@ -1371,7 +1371,7 @@ document.getElementById('dia').innerHTML=`hoje é ${diaNome}`
 
 //let carros = ['ferrari', 'uno', 'corola', 'jepp','sivic']
 
-let html = '<ul>';
+//let html = '<ul>';
 /*
 for (let i in carros){
     html += '<li>'+carros[i] +'</li>'
@@ -1379,7 +1379,7 @@ for (let i in carros){
 
 html += "</ul>"
 */
-
+/*
 let c = 0
 
 while(c <= 10){
@@ -1394,7 +1394,7 @@ for (let c = 1; c <= 10; c++){
 
 document.querySelector("#demo").innerHTML= html
 
-
+*/
 /*
 let texto = ""
 
@@ -1402,6 +1402,14 @@ for(let i = 0;i <= 50; i++){
     texto = texto + i + '</br>'
 }
 */
+/*
+document.getElementById('demo').innerHTML='pedro <button>botão</button>';
 
+document.getElementsByClassName('lista')[0].innerHTML='item alterado'
 
+document.getElementsByName('Email')
 
+document.getElementsByTagName('button')
+
+document.querySelector('button').innerHTML="eu quero você";
+*/
