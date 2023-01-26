@@ -22,6 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
     
 }
 .info-hearder img{
@@ -29,14 +30,21 @@ header{
     height: 30px;
     margin-left: 5px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .search{
     margin-left: 10px;
+    cursor: pointer;
     
 }
 .search i{
     padding:0 5px ;
+    cursor: pointer;
+    
+}
+.search i:hover{
+    opacity: 0.5;
 }
 
 
@@ -80,8 +88,42 @@ header{
     font-weight: bold;
     color: #777;
 }
+
+
+
+
 .content{
     width: 85%;
     background-color: rgb(245, 245, 245);
+    padding: 10px;
+}
+.titulosection{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.titulosection p{
+    font-size: 14px;
+}
+.titulosection i{
+    color:#73b4ff ;
+}
+.titulosection hr{
+    border-color: aliceblue;
 }
 
+
+.box-info{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.box-info-sigle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    padding: 10px;
+}
