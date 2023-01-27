@@ -10,7 +10,8 @@
 }
 html,body{
     height: 100%;
-    background-color: #5B8FB9;
+   
+
 }
 header{
     background-color: #5B8FB9;
@@ -101,19 +102,30 @@ header{
 
 
 .content{
+    background-image: url('./mapa mundo.png');
     width: 85%;
-    background-color: #03001C;
+    background-image: url("./img/mapa\ mundo.png");
+    background-position:bottom ;
+    background-size: cover;
+    background-blend-mode: multiply;
     padding: 10px;
-    border-radius: 10px;
+    
 }
 .titulosection{
-    background-color: white;
     padding: 10px;
     border-radius: 10px;
     font-size: 14px;
+    color: white;
+    cursor: pointer;
 }
 .titulosection p{
+    border-radius: 10px;
+    padding: 10px;
+    width: 15%;
+    background-color: #5B8FB9;
+    color: white;
     font-size: 14px;
+    cursor: pointer;
 }
 .titulosection i{
     color:#73b4ff ;
@@ -128,6 +140,7 @@ header{
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
 }
 .box-info-sigle{
     display: flex;
@@ -138,6 +151,7 @@ header{
     border-radius: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 
@@ -188,17 +202,18 @@ header{
     width: 20px;
     height: 20px;
     border-radius: 20px;
+    cursor: pointer;
     
 }
 .grafic{
     width: 70%;
     height: 100%;
     margin-left: 20px;
+    
 }
 #myChart{
     color: white;
-    background-color: #301E67;
     margin-top: 20px;
     border-radius: 20px;
-    
+    cursor: pointer;
 }
