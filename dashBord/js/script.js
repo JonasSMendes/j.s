@@ -1,9 +1,12 @@
+
+
+
 const ctx = document.getElementById('myChart');
 
 new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['janeiro', 'fevereiro', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
       label: '# of Votes',
       data: [12, 19, 3, 5, 2, 3],
@@ -18,3 +21,4 @@ new Chart(ctx, {
     }
   }
 });
+

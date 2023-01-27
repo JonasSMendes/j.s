@@ -10,9 +10,10 @@
 }
 html,body{
     height: 100%;
+    background-color: #5B8FB9;
 }
 header{
-    background-color: #73b4ff;
+    background-color: #5B8FB9;
     padding: 10px 2%;
     display: flex;
     justify-content: space-between;
@@ -53,41 +54,47 @@ header{
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-}
-.sideBar{
     
+}
+.sideBar{ 
     width: 15%;
-    background-color: white;
+    background-color: #5B8FB9;
     height: 100%;
+    
     
 }
 .sideBar h3{
-    color: #333;
+    color: white;
     font-size: 18px;
     margin: 10px;
 }
 .sideBar a.sideBar-active{
-    color: #777;
-    background-color: #ccc;
-    padding: 8px 0;
+    color: white;
+    background-color: #03001C;
+    padding: 10px 0;
     border-left: 5px solid #73b4ff;
     font-weight: bold;
 }
+
 .sideBar a{
     display: block;
     text-decoration: none;
-    color: #444;
-    margin-left: 2px;
+    color: white;
+    margin-left: 10px;
     margin-top: 10px;
-    padding: 8px 0;
+    padding: 10px 0;
+    border-bottom-left-radius:10px ;
+    border-top-left-radius: 10px;
     
 }
 .sideBar a:hover{
-    background-color: #ccc;
-    padding: 8px 0;
+    background-color: #03001C;
+    padding: 10px 0;
     border-left: 5px solid #73b4ff;
     font-weight: bold;
-    color: #777;
+    color: white;
+    border-bottom-left-radius:10px ;
+    border-top-left-radius: 10px;
 }
 
 
@@ -95,8 +102,9 @@ header{
 
 .content{
     width: 85%;
-    background-color: rgb(245, 245, 245);
+    background-color: #03001C;
     padding: 10px;
+    border-radius: 10px;
 }
 .titulosection{
     background-color: white;
@@ -144,7 +152,6 @@ header{
     width: 30%;
     height: 100%;
     padding: 20px;
-    background-color: white;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
@@ -154,18 +161,20 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+   
 
 }
 .feed-text span{
-    color: black;
+    color: white;
 }
 .feed-text{
     display: flex;
     align-items: center;
     
+    
 }
 .feedtime {
-    color: #444;
+    color: white;
 }
 .feed-icon-backgraund{
     display: inline-block;
@@ -179,9 +188,17 @@ header{
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    color: #73b4ff;
+    
 }
 .grafic{
     width: 70%;
     height: 100%;
+    margin-left: 20px;
+}
+#myChart{
+    color: white;
+    background-color: #301E67;
+    margin-top: 20px;
+    border-radius: 20px;
+    
 }
