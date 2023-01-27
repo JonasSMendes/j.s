@@ -1,8 +1,5 @@
-body{
-    margin: 0;
-    padding: 0;
-}
 
+/*
 input{
     padding: 6px;
     background-color: #ccc;
@@ -53,7 +50,7 @@ input{
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
+/*
 #exemplo{
     width: 200px;
     height: 200px;
@@ -76,4 +73,12 @@ input{
 .amarelo{
     background-color: yellow;
     color: #000;
+}
+*/
+
+.preto{
+    background-color: black;
+}
+.verde{
+    background-color: green;
 }

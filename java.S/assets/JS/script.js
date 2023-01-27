@@ -1413,7 +1413,7 @@ document.getElementsByTagName('button')
 
 document.querySelector('button').innerHTML="eu quero você";
 */
-
+/*
 function verde(){
     document.querySelector('#exemplo').classList.remove('vermelho')
     document.querySelector('#exemplo').classList.remove('azul')
@@ -1439,3 +1439,20 @@ function amarelo(){
     document.querySelector('#exemplo').classList.remove('amarelo')
     document.querySelector('#exemplo').classList.add('amarelo')
 }
+
+*/
+function trocar(){
+   if ( document.querySelector('button').classList.contains('preto')){
+    document.querySelector('button').classList.remove('preto')
+    document.querySelector('button').classList.add('verde')
+   } else{
+   document.querySelector('button').classList.remove('verde')
+   document.querySelector('button').classList.add('preto')
+   }
+
+   
+}
+
+var nome= 'jonas'
+var idade = 90
+
