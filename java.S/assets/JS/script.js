@@ -1441,6 +1441,7 @@ function amarelo(){
 }
 
 */
+/*
 function trocar(){
    if ( document.querySelector('button').classList.contains('preto')){
     document.querySelector('button').classList.remove('preto')
@@ -1461,3 +1462,12 @@ var cidade;
 var tipo = typeof nome
 
 console.log(tipo)
+
+*/
+
+function trocar(titulo){
+    document.getElementById('exemplo').innerHTML='trocou o titulo'
+
+}
+
+
