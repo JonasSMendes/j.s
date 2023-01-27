@@ -10,14 +10,19 @@
 }
 html,body{
     height: 100%;
-   
+    background-image: url("./img/mapa\ mundo.png");
+    background-position:left bottom;
+    background-size: cover;
+    background-blend-mode: multiply;
 
 }
 header{
-    background-color: #5B8FB9;
+    width: 100%;
     padding: 10px 2%;
     display: flex;
     justify-content: space-between;
+   
+    
 
 }
 .info-hearder{
@@ -28,6 +33,7 @@ header{
     cursor: pointer;
     
 }
+
 .info-hearder img{
     width: 30px;
     height: 30px;
@@ -58,6 +64,8 @@ header{
     
 }
 .sideBar{ 
+    border-radius: 20px;
+    opacity: 0.8;
     width: 15%;
     background-color: #5B8FB9;
     height: 100%;
@@ -102,12 +110,9 @@ header{
 
 
 .content{
-    background-image: url('./mapa mundo.png');
+    
     width: 85%;
-    background-image: url("./img/mapa\ mundo.png");
-    background-position:bottom ;
-    background-size: cover;
-    background-blend-mode: multiply;
+   
     padding: 10px;
     
 }
