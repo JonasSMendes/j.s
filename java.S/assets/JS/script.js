@@ -1455,4 +1455,9 @@ function trocar(){
 
 var nome= 'jonas'
 var idade = 90
+var salvo = false
+var cidade;
 
+var tipo = typeof nome
+
+console.log(tipo)
