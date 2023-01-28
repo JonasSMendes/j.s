@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
+<section class="content">
 <div class="numb1">
-    <input type="number">
+    <input id="x" type="number">
 </div>
-<div class="numb2">
-    <input type="number">
+<div class="numb1">
+    <input id="y" type="number">
 </div>
+=
+<div class="numb1">
+    <div id="igual" class="resultado"></div>
+</div>
+</section>
 <div class="somas">
-    <button onclick=""  id="somar">+</button>
-    <button onclick=""  id="dividir">/</button>
-    <button onclick=""  id="subtrair">-</button>
-    <button onclick=""  id="multiplicar">*</button>
+    <button onclick="somar()" id="somar">+</button>
+    <button onclick="dividir()"  id="dividir">/</button>
+    <button onclick="subtrair()"  id="subtrair">-</button>
+    <button onclick="multiplicar()"  id="multiplicar">*</button>
+
+    <script src="./js/script.js"></script>
 </div>
 </body>
 </html>
