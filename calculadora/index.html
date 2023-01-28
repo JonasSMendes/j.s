@@ -8,25 +8,34 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+<main class="fundo">
+    
 <section class="content">
-<div class="numb1">
-    <input id="x" type="number">
-</div>
-<div class="numb1">
-    <input id="y" type="number">
-</div>
-=
-<div class="numb1">
-    <div id="igual" class="resultado"></div>
-</div>
-</section>
+    <div class="numb1">
+        <div id="igual" class="resultado"></div>
+    </div>
+    <div class="numb1">
+        <input id="x" type="number">
+    </div>
+    <div class="numb1">
+        <input id="y" type="number">
+    </div>
+</section> <!--section-->
+
+
+
 <div class="somas">
+
     <button onclick="somar()" id="somar">+</button>
     <button onclick="dividir()"  id="dividir">/</button>
     <button onclick="subtrair()"  id="subtrair">-</button>
     <button onclick="multiplicar()"  id="multiplicar">*</button>
 
-    <script src="./js/script.js"></script>
 </div>
+
+</main>
+
+<script src="./js/script.js"></script>
 </body>
 </html>

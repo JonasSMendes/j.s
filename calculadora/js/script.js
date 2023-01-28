@@ -22,7 +22,7 @@ function subtrair(){
 
     if( x !== "" && y !== ""){
 
-        const somar = parseInt(x) + parseInt(y)
+        const somar = parseInt(x) - parseInt(y)
         igual.textContent = somar
     }else{
         alert('preencha todos os campos')
@@ -36,7 +36,7 @@ function dividir(){
 
     if( x !== "" && y !== ""){
 
-        const somar = parseInt(x) + parseInt(y)
+        const somar = parseInt(x) / parseInt(y)
         igual.textContent = somar
     }else{
         alert('preencha todos os campos')
@@ -50,7 +50,7 @@ function multiplicar(){
 
     if( x !== "" && y !== ""){
 
-        const somar = parseInt(x) + parseInt(y)
+        const somar = parseInt(x) * parseInt(y)
         igual.textContent = somar
     }else{
         alert('preencha todos os campos')
