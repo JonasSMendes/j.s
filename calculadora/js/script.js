@@ -1,5 +1,4 @@
 
-
 const igual = document.getElementById('igual')
 
 function somar(){
