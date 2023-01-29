@@ -1480,7 +1480,7 @@ function somar(x, y){
 somar(16, 30)
 
 */
-
+/*
 function trocarimagem(filename, animalName){
     document.querySelector('.imagem').setAttribute('src', 'imagem/'+filename);
     document.querySelector('.imagem').setAttribute('data-animal', animalName)
@@ -1490,3 +1490,26 @@ function pegarAnimal(){
     let animal = document.querySelector('.imagem').getAttribute('data-animal')
     alert(`o animal é ${animal}`)
 }
+
+*/
+
+
+function subirtela(){
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+}
+function decidirBotão(){
+
+    if(window.scrollY === 0){
+        document.querySelector('.scroolbutton').style.display='none'
+    }else{
+        document.querySelector('.scroolbutton').style.display='block'
+    }
+}
+
+//setInterval(decidirBotão, 1000)
+window.addEventListener('scroll', decidirBotão)
