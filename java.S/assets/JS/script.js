@@ -1464,10 +1464,20 @@ var tipo = typeof nome
 console.log(tipo)
 
 */
-
+/*
 function trocar(titulo){
-    document.getElementById('exemplo').innerHTML='trocou o titulo'
+    document.getElementById('exemplo').innerHTML= titulo
+    document.querySelector('.preto').value = titulo
+}
+*/
+/*
+function somar(x, y){
+    let total = x + y;
 
+    document.getElementById('soma').value=total
 }
 
+somar(16, 30)
+
+*/
 
