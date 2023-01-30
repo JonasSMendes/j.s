@@ -1580,14 +1580,17 @@ console.log(res)
 // splice() remover itens de qualquer lugar usando 2 parametros
 // concat() junta 2 arrays 
 // sort() ordena as listas em ordem alfabetica A a Z
-//reverse() ela faz o Sort() ficar de Z a A / e reverte a ordem dos itens sem o sort()
+// reverse() ela faz o Sort() ficar de Z a A / e reverte a ordem dos itens sem o sort()
+// map() cria uma função interna que pode substituir o for e fazer um loop em um array de uma maneira mais simples 
+// filter() ele cria um filtro que pode se utilizar de função para filtrar os conteudos do array
+// every() ele retorna true ou false, caso faça um desafio ele retorna com true ou false e todo mundo do array precisa estar de acordo com a condição
+
+let lista = [34, 10, 5, 9, 11, 152]
+let lista2 = []
+
+lista2 = lista
 
 
-let lista = ['farinha', 'ovo', 'açucar','leite']
-
-
-lista.reverse()
-
-let res = lista
+let res = lista2
 
 console.log(res)
