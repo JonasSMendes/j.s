@@ -1515,20 +1515,19 @@ function decidirBotão(){
 window.addEventListener('scroll', decidirBotão)
 
 */
-
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //editando string
 
 //lengh()
-//indexOf()
+//indexOf() procura a posição das strings
 //slice()
 //subtring()
-//substr **()
-
+//substr()
 //replace() subtitui os valores
 //toLocaleUpperCase()
-// trim() tira as partes em branco
+// trim() tira os espaços em branco
 //charAt()
-// split()
+// split() tranforma em array
 /*
 let nome  = 'jonas da silva mendes'
 
@@ -1566,5 +1565,24 @@ let res = parseFloat(n) + 5.8
 
 console.log(res)
 */
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 //arrays e manipulação 
+
+//toString() trandorma em sting
+// join() transforma em string tbm com outras funcionalidades
+// indexOf() acha a posição do item no array
+// pop() remove o ultimo item do array
+// shift() remove o primeiro item do array
+// push() adiciona um item no array
+// [lista.length] altera o item ou adicona em um lugar que ñ foi ocupado ainda 
+
+
+let lista = ['farinha', 'ovo', 'açucar','leite']
+
+
+
+let res = lista
+
+console.log(res)
