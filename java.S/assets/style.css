@@ -83,6 +83,7 @@ input{
     background-color: green;
 }
 */
+/*
 .texto{
     
     width: 200px;
@@ -102,5 +103,7 @@ input{
     bottom: 50px;
     z-index: 999;
     cursor: pointer;
+    scroll-behavior: smooth;
     
 }
+*/

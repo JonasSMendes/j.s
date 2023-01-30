@@ -1493,7 +1493,7 @@ function pegarAnimal(){
 
 */
 
-
+/*
 function subirtela(){
 
     window.scrollTo({
@@ -1513,3 +1513,58 @@ function decidirBotão(){
 
 //setInterval(decidirBotão, 1000)
 window.addEventListener('scroll', decidirBotão)
+
+*/
+
+//editando string
+
+//lengh()
+//indexOf()
+//slice()
+//subtring()
+//substr **()
+
+//replace() subtitui os valores
+//toLocaleUpperCase()
+// trim() tira as partes em branco
+//charAt()
+// split()
+/*
+let nome  = 'jonas da silva mendes'
+
+let resultado= " "
+
+ if(nome.indexOf('bruno') > -1){
+    resultado = 'achou'
+ }else{
+    resultado='ñ achou'
+ }
+
+console.log(resultado)
+*/
+/*
+let nome = 'jonas mendes'
+
+let resultado = nome.replace()
+
+
+console.log('resultado:', resultado)
+*/
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//number manipulação
+
+//toString() trasnformar em string
+//toFixed() diminuir os numeros de decimais
+// parseInt() trandofrma strings em numeros inteiros
+// parsefloat() numeros decimais são preservados tbm
+/*
+let n = '45.6'
+
+let res = parseFloat(n) + 5.8
+
+console.log(res)
+*/
+
+//arrays e manipulação 
