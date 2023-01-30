@@ -1577,11 +1577,16 @@ console.log(res)
 // shift() remove o primeiro item do array
 // push() adiciona um item no array
 // [lista.length] altera o item ou adicona em um lugar que ñ foi ocupado ainda 
+// splice() remover itens de qualquer lugar usando 2 parametros
+// concat() junta 2 arrays 
+// sort() ordena as listas em ordem alfabetica A a Z
+//reverse() ela faz o Sort() ficar de Z a A / e reverte a ordem dos itens sem o sort()
 
 
 let lista = ['farinha', 'ovo', 'açucar','leite']
 
 
+lista.reverse()
 
 let res = lista
 
