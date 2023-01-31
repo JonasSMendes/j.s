@@ -1628,7 +1628,7 @@ console.log(d)
 */
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+/*
 // matematica 
 
 //Math.round() arredonda a função
@@ -1642,3 +1642,4 @@ console.log(d)
 let novoValor = Math.floor( Math.random() * 100)
 
 console.log( novoValor)
+*/
