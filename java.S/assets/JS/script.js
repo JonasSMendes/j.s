@@ -1619,9 +1619,26 @@ console.log(pessoa)
 
 
 //Datas
-
+/*
 let d = new Date();
 
-d.setDate(15)
+d.setTime
 
 console.log(d)
+*/
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// matematica 
+
+//Math.round() arredonda a função
+//Math.round() arredonda para baixo sempre
+//Math.ceil () sempre arredonda para cima
+//Math.abs() saber o numero absoluto
+//Math.min() menor numero de de uma cadeia de numeros
+//Math.max() o maior de cada cadeia de numero
+//Math.random() um numero aleatorio de 0 a 10
+
+let novoValor = Math.floor( Math.random() * 100)
+
+console.log( novoValor)
