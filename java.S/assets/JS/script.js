@@ -1607,9 +1607,21 @@ console.log(pessoa)
 // toDateString() resume a data e a hora
 // toUTCString() entrega a data do global
 // toString() transforma em string
+// getFullYear() pegar o ano
+// getMonth() pegar o mês
+// getDay() pega o numero do dia da semana 
+// getDate() pega a data do dia 
+// getHours() pega as horas
+// getMinutes() pega os minutos
+// getSeconds() pega os segundos
+// getMilliseconds() pega os mili segundos
+// getMilliseconds() quantidade de milisegundos de 1970 até o momento
+
 
 //Datas
 
 let d = new Date();
 
-console.log(d.toUTCString())
+d.setDate(15)
+
+console.log(d)
