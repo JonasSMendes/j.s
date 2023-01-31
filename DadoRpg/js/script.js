@@ -1,18 +1,17 @@
-
- 
-    
-    const img = document.querySelector('.img')
+const img = document.querySelector('.img')
 
 function clicar(i){
+
     let input = document.querySelector('.input').value
 
-    if(i.onkeyup === 'Enter'){
+    if(i.key === 'Enter'){
 
      let valor = Math.floor( Math.random() * input)
 
-        console.log(valor)
+     img.innerHTML = valor
+
     }
 
 }
 
-img.addEventListener('keyup',clicar)
+img.addEventListener('keyup', clicar)

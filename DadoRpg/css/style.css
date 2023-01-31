@@ -24,3 +24,18 @@ body{
     height: 40px;
     text-align: center;
 }
+.img{
+    position: absolute;
+    font-size: 70px;
+    margin-bottom: 60px;
+
+}
+.content2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.content2 h1{
+    margin-right: 20px;
+}
