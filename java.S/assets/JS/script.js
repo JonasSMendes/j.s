@@ -1586,7 +1586,7 @@ console.log(res)
 // every() ele retorna true ou false, caso faça um desafio ele retorna com true ou false e todo mundo do array precisa estar de acordo com a condição
 // find() ele retorna o item do array utilizando uma função 
 // findIndex() ele retorna o numero do array na lista de arrays,você consegue fazer isso usando uma função 
-
+/*
 let lista = [
     {nome: 'jonas', id:1 , sobrenome: 'mendes'},
     {nome: 'pedro', id:2, sobrenome: 'pereira'},
@@ -1600,3 +1600,16 @@ let pessoa = lista.find(function(i){
 
 
 console.log(pessoa)
+*/
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// new Date() gerando a Data e hora 
+// toDateString() resume a data e a hora
+// toUTCString() entrega a data do global
+// toString() transforma em string
+
+//Datas
+
+let d = new Date();
+
+console.log(d.toUTCString())
