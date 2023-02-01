@@ -1643,3 +1643,49 @@ let novoValor = Math.floor( Math.random() * 100)
 
 console.log( novoValor)
 */
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//intervalos
+
+//setInterval() sempre fica atulizando o de tempos em tempos
+/*
+let timer
+
+function comecar(){
+    timer = setInterval(showtime, 1000);
+}
+function parar(){
+    clearInterval(timer)
+}
+
+function showtime(){
+    let d = new Date();
+    let h = d.getHours()
+    let m = d.getMinutes()
+    let s = d.getSeconds()
+
+    let txt = `${h}: ${m}: ${s}`
+
+    document.querySelector('.demo').innerHTML= txt
+
+
+}
+ // settimeout() vai esperar um tempo e rodar uma função uma vez
+*/
+/*
+let timer
+function rodar(){
+
+timer = setTimeout( function(){
+    document.querySelector('.demo').innerHTML='rodou'
+}, 2000)
+
+}
+function parar(){
+    clearTimeout(timer)
+}
+*/
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
