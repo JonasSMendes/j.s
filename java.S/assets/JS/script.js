@@ -1689,3 +1689,23 @@ function parar(){
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+// desconstrução de objetos
+
+
+let pessoa  = {
+    nome: 'jonas',
+    sobrenome: 'mendes',
+    idade: 90,
+    social:{
+        facebook: 'jonasME',
+        instagram: 'meMejonas'
+    },
+    nomecompleto: function(){
+        return ` ${this.nome} ${this.sobrenome}`
+    }
+}
+
+
+let {nome:pessoaNome, sobrenome, idade = 0}   = pessoa //tranformar em varieavis os obejtos do array
+
+console.log(sobrenome, idade, pessoaNome)
