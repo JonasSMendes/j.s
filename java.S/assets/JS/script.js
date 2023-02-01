@@ -1697,15 +1697,20 @@ let pessoa  = {
     sobrenome: 'mendes',
     idade: 90,
     social:{
-        facebook: 'jonasME',
+        facebook:{
+            url : 'meufaceboook',
+            seguidores: 1000 
+        },
         instagram: 'meMejonas'
     },
-    nomecompleto: function(){
-        return ` ${this.nome} ${this.sobrenome}`
-    }
+   
 }
 
+//let  { nome , idade, social:{ facebook:{url:facebook } } } = pessoa // transformando dentro de muitas e muitass
 
-let {nome:pessoaNome, sobrenome, idade = 0}   = pessoa //tranformar em varieavis os obejtos do array
+//let {nome:pessoaNome, sobrenome, idade = 0}   = pessoa //tranformar em varieavis os obejtos do array
 
-console.log(sobrenome, idade, pessoaNome)
+function pegaNome({nome, sobrenome, social:{facebook: {url: facebook}}}){
+    return `${nome} ${sobrenome} @${facebook}`
+}
+console.log(pegaNome(pessoa))
