@@ -1769,3 +1769,44 @@ console.log(letrasNoNome('jonas'))
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+// operador spread
+/*
+let numeros = [1, 2, 3, 4]
+
+let outros = [5,  6, 7, 8] // spread
+
+console.log(numeros)
+*/
+/*
+let info = {
+    nome: 'jonas',
+    sobrenome:'mendes',
+    idade: 21
+}
+
+let novasInfos = {
+    ...info,
+    cidade: 'recife',
+    pais: 'brasil',
+    região: 'nordeste',
+}
+
+console.log(novasInfos)
+*/
+/*
+function adicionaInfo(info){
+    let novasinfo = {
+        ...info,
+        status: 0,
+        token: 'viva la vida loka',
+        data_cadastro: '.....'
+    }
+    
+    return novasinfo
+}
+console.log(adicionaInfo({nome: 'jonas', sobrenome: 'mendes'}))
+*/
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
