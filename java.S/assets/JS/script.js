@@ -1691,7 +1691,7 @@ function parar(){
 
 // desconstrução de objetos
 
-
+/*
 let pessoa  = {
     nome: 'jonas',
     sobrenome: 'mendes',
@@ -1714,3 +1714,27 @@ function pegaNome({nome, sobrenome, social:{facebook: {url: facebook}}}){
     return `${nome} ${sobrenome} @${facebook}`
 }
 console.log(pegaNome(pessoa))
+
+*/
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//descostruindo arrays
+/*
+function criar(){
+   return [1 , 3 , 4]
+    
+}
+let [ a, b, c] = criar()
+
+
+
+//let [nome ,sobrenome, idade=90] = ['jonas', 'mendes', 190]; // cria variaveis ja dentro do array
+
+//let array = ['jonas mendes', 'jonas', 'mendes','@jonas_43']
+
+//let [ nomeCompleto, , ,instagram] = array // transfromando em uma variavel os itens do array
+
+console.log(a ,b , c)
+*/
+
