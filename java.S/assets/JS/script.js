@@ -1738,3 +1738,34 @@ let [ a, b, c] = criar()
 console.log(a ,b , c)
 */
 
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+/*
+
+//arrow function    
+
+function somar(x , y ){
+    return x + y
+}
+*/
+/*
+let somar = function(){
+    returne x+ y
+}
+
+*/
+/*
+let somar = (x, y) => {  // arrow function
+    return x + y
+}
+*/
+
+//let somar = (x ,y) => x + y // arrow resumo e simples com uma ação especifica
+/*
+let letrasNoNome = nome => nome.length;
+
+
+console.log(letrasNoNome('jonas'))
+*/
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
