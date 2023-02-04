@@ -64,6 +64,11 @@ video{
     font-size: 20px;
     color: #ccc;
 }
+.buttom{
+    
+    width: 400px;
+    margin-left: 45px;
+}
 .buttom a{
 
     text-align: center;
@@ -72,12 +77,16 @@ video{
     padding: 10px;
     width: 50px;
     height: 10px;
-    margin-left: 10px;
+    margin-left: 5px;
     background-color: rgb(149, 149, 149);
     opacity: 0.9;
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 8px;
 
+}
+.buttom a:hover{
+    background-color: #ccc;
+    transition: 500ms;
 }
 .ability{
     margin-left: 40px;
