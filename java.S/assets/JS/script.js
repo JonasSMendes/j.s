@@ -1868,8 +1868,28 @@ console.log(adicionaInfo({nome: 'jonas', sobrenome: 'mendes'}))
 // key() mostra o numero da posição array // em obejetos retorna todos os nomes 
 // value() mostra o valores do array array // faz o mesmo procedimento mostrando os valores dos obejtos
 // entries() mostra os dois tanto o numero quanto o valor // gera um array para cada item identificando eles
-
+/*
 
 let lista = [ 'ovo', 'pipoca','feijão','farinha']
 
 console.log(Object.entries(lista))
+*/
+
+//String, padStart, padEnd
+
+//padEnd() preenche com um valor que desejar no final dela
+//padStart() prennche no inicio da string
+/*
+let telefone = '81'
+
+console.log(telefone.padStart(9, '*'))
+*/
+/*
+let card = '1234123412341234'
+
+let lastnumb = card.slice(-4)
+
+let  cardMascs = lastnumb.padStart(16, '*')
+
+console.log(`este é seu cartão? ${cardMascs}`)
+*/
