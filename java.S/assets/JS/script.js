@@ -1842,4 +1842,26 @@ console.log(adicionaInfo({nome: 'jonas', sobrenome: 'mendes'}))
 
  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+ // incluides , repet
+
+ //includes()  serve para encontrar nomes em listas de array e letras em ou coisas dentro de uma string 
+
+ // repet() serve para repetir strings dentro do codigo
+
+
+
+/*
+
+ let nomes = ['jonas', 'paulo', 'marcelo', 'julio']
+
+ console.log( nomes.includes('amuram') )
+ */
+
  
+
+ //console.log( 'x '.repeat(20) )
+
+ //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//Objeto: Key, Values e Entries
+
