@@ -1865,8 +1865,8 @@ console.log(adicionaInfo({nome: 'jonas', sobrenome: 'mendes'}))
 
 //Objeto: Key, Values e Entries
 
-// key() mostra o numero da posição array // em obejetos retorna todos os valores do objeto
-// value() mostra o valores do array array // faz o mesmo procedimento
+// key() mostra o numero da posição array // em obejetos retorna todos os nomes 
+// value() mostra o valores do array array // faz o mesmo procedimento mostrando os valores dos obejtos
 // entries() mostra os dois tanto o numero quanto o valor // gera um array para cada item identificando eles
 
 
