@@ -1865,3 +1865,11 @@ console.log(adicionaInfo({nome: 'jonas', sobrenome: 'mendes'}))
 
 //Objeto: Key, Values e Entries
 
+// key() mostra o numero da posição array // em obejetos retorna todos os valores do objeto
+// value() mostra o valores do array array // faz o mesmo procedimento
+// entries() mostra os dois tanto o numero quanto o valor // gera um array para cada item identificando eles
+
+
+let lista = [ 'ovo', 'pipoca','feijão','farinha']
+
+console.log(Object.entries(lista))
