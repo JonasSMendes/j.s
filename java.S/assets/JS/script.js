@@ -1807,6 +1807,39 @@ function adicionaInfo(info){
 console.log(adicionaInfo({nome: 'jonas', sobrenome: 'mendes'}))
 */
 
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//operador rest
 
 
+
+/*
+ function add(...nomes){
+        console.log(nomes)
+ }
+
+ add('jonas','pedro', 'afonso');
+*/
+
+ /*
+
+ function add(nomes, ...novosNomes){
+    
+    let outroParametro = [
+        ...nomes,
+        ...novosNomes
+    ]
+
+    return outroParametro
+ }
+
+ let nomes = ['jonas', 'paulinho']
+
+ let outros = add(nomes, 'antornio', 'pedro', 'guilherme')
+
+ console.log(outros)
+ */
+
+ //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ 

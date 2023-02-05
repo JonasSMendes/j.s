@@ -107,13 +107,16 @@ video{
     height: 50px;
 
 }
+/*
 .ability span{
+    
     width: 52px;
     height: 52px;
     margin-left: 25px;
     
     background-color: aqua;
 }
+*/
 .ability a:hover{
     background-color: aqua;
     transition: 300ms ;
