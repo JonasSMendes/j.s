@@ -1971,7 +1971,7 @@ temp.catch(function (error){
 
 //fetch 1
 
-
+/*
 function loadPost(){
     document.getElementById('post').innerHTML = 'carregando...'
 
@@ -2000,3 +2000,5 @@ function montarBlog(lista){
     document.getElementById('post').innerHTML = html
 }
 //
+*/
+
