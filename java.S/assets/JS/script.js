@@ -1972,9 +1972,17 @@ temp.catch(function (error){
 //fetch 1
 
 /*
-function loadPost(){
+
+async function loadPost(){
     document.getElementById('post').innerHTML = 'carregando...'
 
+
+let  rec = await fetch('https://jsonplaceholder.typicode.com/posts')
+let json = await rec.json()
+montarBlog(json)
+
+
+/*
     fetch('https://jsonplaceholder.typicode.com/posts',)
     .then(function(resultado){
         return resultado.json();
@@ -1986,6 +1994,8 @@ function loadPost(){
     .catch(function(){
         console.log('deu ruim meu chapa')
     })
+*/
+/*
 }
 
 function montarBlog(lista){
@@ -1999,6 +2009,26 @@ function montarBlog(lista){
 
     document.getElementById('post').innerHTML = html
 }
-//
+
 */
+//
+
+ async function inserirPost(){
+    document.getElementById('post').innerHTML = 'carregando...'
+
+    let rec = await fetch('https://jsonplaceholder.typicode.com/posts',{
+        method: 'POST',
+        body: json.stringify({
+            title: 'titulo do texto',
+            body: 'campo de teste',
+            userId: 4
+        }),
+        Headers:{
+            'content-type' : 'application/json'
+        }
+    });
+    let json = await rec.json();
+    
+    console.log(json)
+}
 
