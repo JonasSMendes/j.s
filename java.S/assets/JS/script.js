@@ -2012,12 +2012,12 @@ function montarBlog(lista){
 
 */
 //
-
+/*
  async function inserirPost(){
     document.getElementById('post').innerHTML = 'carregando...'
 
     let rec = await fetch('https://jsonplaceholder.typicode.com/posts',{
-        method: 'POST',
+        method: 'GET',
         body: json.stringify({
             title: 'titulo do texto',
             body: 'campo de teste',
@@ -2031,4 +2031,6 @@ function montarBlog(lista){
     
     console.log(json)
 }
+*/
+
 
