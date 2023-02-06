@@ -1893,3 +1893,18 @@ let  cardMascs = lastnumb.padStart(16, '*')
 
 console.log(`este é seu cartão? ${cardMascs}`)
 */
+
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//API/2
+//JSON
+//parce() = PEGA UMA STRING E TRANSFORMAR EM JSON
+// STRINGFY = PEGA UM JSON E TRANSFORMA EM STRING 
+
+
+
+//https://pokeapi.co/api/v2/pokemon/ditto
+
+
