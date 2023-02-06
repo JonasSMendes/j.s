@@ -82,16 +82,16 @@ video{
     opacity: 0.9;
     margin-top: 50px;
     margin-left: 8px;
+    
 
 }
-.buttom a:hover{
-    background-color: #ccc;
-    transition: 500ms;
-}
+
+
+
 .ability{
     margin-left: 40px;
     padding: 10px;
-    border-top: 1px solid white;
+    
     
 }
 .ability img{
@@ -100,13 +100,51 @@ video{
     height: 50px;
 
 }
-.ability a{
+
+.buttom1{
     border: 2px solid white;
     margin-left: 25px;
-    width: 50px;
-    height: 50px;
-
+    transition: color 1s;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid white;
+    letter-spacing: 2px;
+    padding: 1px 2px;
 }
+.buttom1::before,
+.buttom1::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    border: inherit;
+    transition: .5s;
+    
+}
+.buttom1::before{
+    top: -10px;
+    left: -10px;
+    border-width: 0 2px 2px 0 ;
+    background-color:rgb(26, 239, 196) ;
+}
+.buttom1::after{
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 2px 2px 0 ;
+    background-color:rgb(26, 239, 196) ;
+}
+.buttom1:hover::after,
+.buttom1:hover::before{
+    width: calc(100% + 18px);
+    height: calc(100% + 18px);
+}
+
+
+
+
+
+
+
 /*
 .ability span{
     
@@ -117,7 +155,46 @@ video{
     background-color: aqua;
 }
 */
-.ability a:hover{
-    background-color: aqua;
-    transition: 300ms ;
+
+
+.text-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 100px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-top: 450px;
+    margin-left: 70px;
+    padding: 5px;
+    font-size: 18px;
+    
+    
+}
+.C{
+    display: none;
+    background-color:rgb(149, 149, 149);
+    border: 1px solid white;
+}
+.Q{
+    display: none;
+    background-color:rgb(149, 149, 149);
+    border: 1px solid white;
+}
+.E{
+    display: none;
+    background-color:rgb(149, 149, 149);
+    border: 1px solid white;
+}
+.X{
+    display: none;
+    background-color:rgb(149, 149, 149);
+    border: 1px solid white;
+}
+.INFO{
+    display: none;
+    background-color:rgb(149, 149, 149);
+    border: 1px solid white;
 }
