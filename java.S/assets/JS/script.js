@@ -1938,3 +1938,33 @@ let sobrenome = 'mendes'
 console.log(`nomeComnpleto ${nome} ${sobrenome}`)
 */
 
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//usando a promise 
+
+/*
+function pegarTemperatura() {
+    return new Promise(function( resolve, reject) {
+        console.log('pegando a temperatura...')
+
+        setTimeout(function(){
+            resolve('40 na sombra')
+        },2000);
+    })
+}
+
+
+
+//then() quando tudo da certo
+// catch() quando da errado
+
+
+let temp  = pegarTemperatura();
+temp.then(function(resultado){
+    console.log("temperatura" + ' ' + resultado )
+})
+temp.catch(function (error){
+    console.log('deu ruim meu chefe')
+})
+
+*/
+
