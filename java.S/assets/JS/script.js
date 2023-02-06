@@ -1153,6 +1153,7 @@ let p1 = creatPerson('jonas' , 21);
 console.log(`${p1.name} tem ${p1.age} anos`)
 
 */
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 // requisições
 
@@ -1907,4 +1908,33 @@ console.log(`este é seu cartão? ${cardMascs}`)
 
 //https://pokeapi.co/api/v2/pokemon/ditto
 
+
+/*
+//condigo sincrono
+let nome = 'jonas'
+let idade = 20
+let completo = nome + '' + idade
+
+// codigo assincrono
+
+let nome1 = 'jonas'
+let idade2 = 20
+let temperatura = maquina.pegarTemperatura();// assincrona 
+let completo3 = nome + '' + idade
+
+*/
+
+//callback
+
+
+/*
+function alertar(){
+    console.log('ola porra')
+}
+
+let nome = 'jonas'
+setTimeout(alertar, 2000)
+let sobrenome = 'mendes'
+console.log(`nomeComnpleto ${nome} ${sobrenome}`)
+*/
 
