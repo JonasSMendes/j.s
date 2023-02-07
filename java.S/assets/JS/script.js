@@ -2032,5 +2032,52 @@ function montarBlog(lista){
     console.log(json)
 }
 */
+// envio de um arquivo 
+/*
+async function enviar(){
+    let arquivo = document.getElementById('arquivo').files[0];
+
+    let body = new FormData();
+    body.append('title', 'hahahahah')
+    body.append('arquivo', arquivo)
 
 
+    let req = await fetch('http://meusite.com.br/ulpold',{
+        method: 'POST',
+        body: body,
+        Headers:{
+            'Content-Type':'multipart/form-data'
+        }
+    })
+
+    
+}
+*/
+/*
+function mostrar(){
+    let imagem = document.getElementById('arquivo').files[0];
+
+    let img = document.createElement('img')
+    img.src = URL.createObjectURL(imagem)
+    img.width = 200;
+
+    document.getElementById('area').appendChild(img)
+}
+*/
+/*
+function mostrar(){
+    let reader = new FileReader(); //leitor de arquivo
+    let imagem = document.getElementById('arquivo').files[0];
+
+    reader.onloadend = function(){
+        let img = document.createElement('img')
+        img.src = reader.result
+        img.width = 200;
+
+        document.getElementById('area').appendChild(img)
+    }
+
+
+    reader.readAsDataURL(imagem);
+}
+*/
