@@ -19,3 +19,4 @@ function showtext(el, text, interval){
 }
 
 showtext(el, text, interval)
+

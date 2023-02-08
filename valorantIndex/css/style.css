@@ -131,6 +131,8 @@ video{
 .agent-section{
     display: flex;
     margin-left: 150px;
+    justify-content: space-around;
+    
 
  
 }
@@ -143,7 +145,7 @@ video{
     position: absolute;
     color: #fff;
     margin-top: 150px;
-    margin-left: 700px;
+    margin-left: 600px;
 
 }
 .agent-text-name h1{
@@ -155,7 +157,49 @@ video{
 .agent-text-name h1:hover{
     color: #ccc;
 }
-.agent-text-name p{
+.abilitys-agent{
+  height: 20px;
+  margin-top: 200px;
+}
+.abilitys-agent ul li img{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    
+    
+}
+.abilitys-agent ul li{
+    list-style: none;
+    margin-left: 10px;
+    
+    
+}
+.abilitys-agent ul{
+    display: flex;
+   
+}
+.abilitys-agent ul li  img{
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
     text-transform: uppercase;
-    color:color;
+    letter-spacing: 0.1em;
+    padding: 2px 9px;
+    transition: 0.5s;
+}
+.abilitys-agent ul li img:hover{
+    background-color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+
+}
+.abilitys-agent ul li img::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+
 }
