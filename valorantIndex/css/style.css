@@ -58,7 +58,7 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 150px;
+    margin-right: 100px;
 }
 .nav-menu ul li{
     margin-left: 40px;
@@ -66,9 +66,17 @@ video{
 }
 .nav-menu ul li a{
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 30px 5px;
+    
+}
+.nav-menu ul li a:hover{
+    color: #ccc;
+    transition: 200ms;
+    border-bottom: 4px solid white;
+    
 }
 .img-menu{
     display: flex;
