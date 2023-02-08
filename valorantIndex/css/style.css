@@ -108,7 +108,9 @@ video{
     transition: color 500ms;
 }
 .buttom:hover{
-    color: #ccc;
+    color: black;
+    background-color: #fff;
+    transition: 500ms;
 }
 .buttom::before{
     content:' ';
