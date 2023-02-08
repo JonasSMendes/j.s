@@ -66,11 +66,13 @@ video{
 }
 .buttom{
     
-    width: 400px;
-    margin-left: 45px;
+    width: 410px;
+    margin-left: 70px;
+    padding-right: 10px;
 }
 .buttom a{
-
+    
+    border-radius: 20px;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -79,9 +81,10 @@ video{
     height: 10px;
     margin-left: 5px;
     background-color: rgb(149, 149, 149);
-    opacity: 0.9;
+    opacity: 0.8;
     margin-top: 50px;
-    margin-left: 8px;
+    margin-left: 10px;
+    
     
 
 }
@@ -91,6 +94,7 @@ video{
 .ability{
     margin-left: 40px;
     padding: 10px;
+    border-radius: 20px;
     
     
 }
@@ -102,6 +106,7 @@ video{
 }
 
 .buttom1{
+    border-radius: 20px;
     border: 2px solid white;
     margin-left: 25px;
     transition: color 1s;
@@ -158,6 +163,7 @@ video{
 
 
 .text-info{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,24 +183,29 @@ video{
     display: none;
     background-color:rgb(149, 149, 149);
     border: 1px solid white;
+    border-radius: 10px
 }
 .Q{
     display: none;
     background-color:rgb(149, 149, 149);
     border: 1px solid white;
+    border-radius: 10px
 }
 .E{
     display: none;
     background-color:rgb(149, 149, 149);
     border: 1px solid white;
+    border-radius: 10px
 }
 .X{
     display: none;
     background-color:rgb(149, 149, 149);
     border: 1px solid white;
+    border-radius: 10px
 }
 .INFO{
     display: none;
     background-color:rgb(149, 149, 149);
     border: 1px solid white;
+    border-radius: 10px
 }
