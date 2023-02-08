@@ -128,15 +128,34 @@ video{
     width: 150%;
 }
 
-.img-skye{
+.agent-section{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 150px;
+
  
 }
-.img-skye img{
+.agent-section img{
     margin-top: 100px;
     width: 400px;
     height: 600px;
 }
+.agent-text-name{
+    position: absolute;
+    color: #fff;
+    margin-top: 150px;
+    margin-left: 700px;
 
+}
+.agent-text-name h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+.agent-text-name h1:hover{
+    color: #ccc;
+}
+.agent-text-name p{
+    text-transform: uppercase;
+    color:color;
+}

@@ -1,53 +1,21 @@
 
-function info(){
-    
-    document.querySelector('.INFO').style.display = 'block'
+const el = document.querySelector('.text-name-js h1');
+const text = 'SKYE...';
+const interval = 400;
 
-    
-    document.querySelector('.C').style.display = 'none'
-    document.querySelector('.Q').style.display = 'none'
-    document.querySelector('.E').style.display = 'none'
-    document.querySelector('.X').style.display = 'none'
+function showtext(el, text, interval){
+    const char = text.split('').reverse()
 
+    const type = setInterval(()=>{
+        if(!char.length){
+            return clearInterval(type)
+        }
+
+        const next = char.pop()
+
+        el.innerHTML += next
+
+    },interval)
 }
-function c(){
 
-    document.querySelector('.C').style.display = 'block'
-    
-    document.querySelector('.INFO').style.display = 'none'
-    document.querySelector('.Q').style.display = 'none'
-    document.querySelector('.E').style.display = 'none'
-    document.querySelector('.X').style.display = 'none'
-
-}
-function q(){
-
-    document.querySelector('.Q').style.display = 'block'
-
-    
-    document.querySelector('.INFO').style.display = 'none'
-    document.querySelector('.C').style.display = 'none'
-    document.querySelector('.E').style.display = 'none'
-    document.querySelector('.X').style.display = 'none'
-
-}
-function e(){
-
-    document.querySelector('.E').style.display = 'block'
-    
-    document.querySelector('.INFO').style.display ='none'
-    document.querySelector('.C').style.display = 'none'
-    document.querySelector('.Q').style.display = 'none'
-    document.querySelector('.X').style.display = 'none'
-
-}
-function x(){
-    document.querySelector('.X').style.display = 'block'
-    
-    document.querySelector('.INFO').style.display ='none'
-    document.querySelector('.C').style.display = 'none'
-    document.querySelector('.Q').style.display = 'none'
-    document.querySelector('.E').style.display = 'none'
-    
-
-}
+showtext(el, text, interval)
