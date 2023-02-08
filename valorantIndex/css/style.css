@@ -8,15 +8,18 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    
+    background-image: url('../css/midia/tela de fundo.JPG');
+    
    
-    
-    
 }
 video{
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
+    height: 100%;
+    
     
 }
 
@@ -31,6 +34,12 @@ video{
   height: 300px;
  
   
+}
+
+
+
+.nav{
+    position: absolute;
 }
 .nav-menu{
     height: 80px;
@@ -67,11 +76,16 @@ video{
     
 }
 .nav-menu-2{
-    margin-right: 40px;
-    
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+     
 } 
 .nav-menu-2 i{
   color: white;
+  margin-right: 20px;
   
 }
 .buttom{
@@ -90,7 +104,6 @@ video{
 }
 .buttom::before{
     content:' ';
-    position: absolute;
     top: 0;
     left: -50;
     width: 0;
@@ -103,5 +116,17 @@ video{
 }
 .buttom:hover::before{
     width: 150%;
+}
+
+.img-skye{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.img-skye img{
+    margin-top: 100px;
+    width: 400px;
+    height: 600px;
 }
 
