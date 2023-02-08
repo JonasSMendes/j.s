@@ -3,7 +3,7 @@ let modalQt = 1;
 const c = (el)=> document.querySelector(el) //resumo de codigo sendo atribuido o valor para uma letra só,proposito de diminuir espaço e pratiocidade de manipulação
 const cs = (el) => document.querySelectorAll(el)  
 
-//>>>>>>>>>>>>>>>>>>>>>>> descrição geral dos produtos
+//>>>>>>>>>>>>>>>>>>>>>>> listagem das pizzas
 pizzaJson.map((item, index)=>{
     let pizzaItem = c('.models .pizza-item').cloneNode(true)
     //preencher as informações com pizza-item
@@ -49,3 +49,36 @@ pizzaJson.map((item, index)=>{
 
 });
 
+//eventos do modal
+
+function closeModal(){  // função para fechar o modal
+    c('.pizzaWindowArea').style.opacity = 0
+    setTimeout(()=>{
+        c('.pizzaWindowArea').style.display = 'none';
+    },500)
+}
+
+cs('.pizzaInfo--cancelButton,.pizzaInfo--cancelMobileButton').forEach((i)=>{ //seleção do botão para voltar 
+    i.addEventListener('click', closeModal)
+})
+
+c('.pizzaInfo--qtmenos').addEventListener('click',()=>{ //botão de diminuir quantidade
+    if(modalQt > 1){
+        modalQt--;
+    }
+    c('.pizzaInfo--qt').innerHTML = modalQt 
+})
+c('.pizzaInfo--qtmais').addEventListener('click', ()=>{ // botão para aumentar a quantidade
+
+    modalQt++;
+    c('.pizzaInfo--qt').innerHTML = modalQt
+
+})
+cs('.pizzaInfo--size').forEach((size, sizeIndex)=>{ //mudança do tamanho, usando o size para poder selecionar tudo e ñ direto do </span>
+
+    size.addEventListener('click', (e)=>{
+        c('.pizzaInfo--size.selected').classList.remove('selected')
+        size.classList.add('selected')
+    })
+
+})
