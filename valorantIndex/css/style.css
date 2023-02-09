@@ -236,3 +236,28 @@ video{
 .agent--ability--X{
     display: none;
 }
+
+.video--agent--abilitys{
+    position: absolute;
+    
+   
+}
+.video--agent--abilitys video{
+    margin-top:150px;
+    margin-left: 60px;
+    width: 700px;
+    height: 400px;
+    box-shadow: 15px 0px 10px black;
+}
+.video--agent--ability--Q{
+    display: none;
+}
+.video--agent--ability--E{
+    display: none;
+}
+.video--agent--ability--C{
+    display: none;
+}
+.video--agent--ability--X{
+    display: none;
+}
