@@ -1,4 +1,6 @@
 let modalQt = 1;
+let cart = [];
+let modalkey = 0;
 
 const c = (el)=> document.querySelector(el) //resumo de codigo sendo atribuido o valor para uma letra só,proposito de diminuir espaço e pratiocidade de manipulação
 const cs = (el) => document.querySelectorAll(el)  
@@ -20,6 +22,8 @@ pizzaJson.map((item, index)=>{
 
         let key = e.target.closest('.pizza-item').getAttribute('data-key') // seleção da pizza como um objeto unico
         modalQt = 1;
+        modalkey = key
+
 
         c('.pizzaBig img').src = pizzaJson[key].img //adiconando a imagem especifica da imagem que está no api fake
         c('.pizzaInfo h1').innerHTML = pizzaJson[key].name //adicionando o nome que esta no api fake do json 
@@ -82,3 +86,46 @@ cs('.pizzaInfo--size').forEach((size, sizeIndex)=>{ //mudança do tamanho, usand
     })
 
 })
+c('.pizzaInfo--addButton').addEventListener('click', ()=>{
+    // qual a pizza
+    //modalkey
+    // qual o tamanho
+   let size = parseInt( c('.pizzaInfo--size.selected').getAttribute('data-key'))
+    // quantas pizzas
+    //modalQt
+
+    let indentifyer = pizzaJson[modalkey].id + "@" + size
+
+    let key = cart.findIndex((i)=>{
+        return i.indentifyer == indentifyer
+    })
+
+    if(key > -1 ){
+            cart[key].qt += modalQt;
+    }else{
+        cart.push({     
+            indentifyer,        //colocando itens dentro do carrinho de pizza
+            id : pizzaJson[modalkey].id,
+            size,
+            qt: modalQt
+        })
+    }
+
+    
+    updatecart()
+    closeModal()
+})
+
+function updatecart(){
+    if(cart.length > 0){
+        c('aside').classList.add('show')
+        for(let i in cart){
+
+            let pizzaItem = pizzaJson.find((item)=> item.id == cart[i].id)      
+
+            console.log(pizzaItem)
+        }
+    }else{
+        c('aside').classList.remove('show')
+    }
+}
