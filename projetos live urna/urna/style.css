@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.urna{
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+.tela{
+    width: 500px;
+    height: 320px;
+    background:linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+
+}
+.teclado{
+    background-color: #403a3a;
+    margin-left: 30px;
+}
+.tecladolinha{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.teclado--botão{
+    width: 90px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 3px 3px 0px #555;
+    
+
+}
+.teclado--botão:hover{
+    background-color: #1f1d1d;
+    transition: 300ms;
+}
+.teclado--branco{
+    background-color: #fff;
+    color: #000;
+    font-size: 15;
+
+}
+.botão--corrige{
+    background-color: #f09046;
+    color: #000;
+    font-size: 15;
+}
+.botão--confirma{
+    background-color: #48c079;
+    color: #000;
+    font-size: 15;
+    width: 100px;
+    height: 50px;
+}
+
+
+.d-1{
+    flex: 1;
+    display: flex;
+}
+.d-1--left{
+    flex: 1;
+}
+.d-1--right{
+    width: 90px;
+}
+.d-2{
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid black;
+    padding-left: 10px;
+}
