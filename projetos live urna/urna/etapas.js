@@ -4,7 +4,7 @@ let etapas = [
     numeros: 4,
     candidatos:[
         {
-            numero: 38111,
+            numero: '38111',
             nome: 'fulano de tal',
             pertido: 'ABC',
             fotos: [
@@ -12,8 +12,8 @@ let etapas = [
             ]
         },
         {
-            numero: 77222,
-            name: 'beltrano da silva',
+            numero: '77222',
+            nome: 'beltrano da silva',
             partido: 'DEFG',
             fotos:[
                 {
@@ -25,12 +25,12 @@ let etapas = [
     ]
     
 }, // fim do primeiro obejeto
-    {  
+{  
     titulo: 'PREFEITO',
     numeros: 1,
     candidatos:[
         {
-            numero: 84,
+            numero: '84',
             nome: 'coitado da tia',
             vice: 'cic',
             pertido: 'ABC',
@@ -40,8 +40,8 @@ let etapas = [
             ]
         },
         {
-            numero: 99,
-            name: 'zulano',
+            numero: '99',
+            nome: 'zulano',
             vice: 'zul' ,
             partido: 'QWERT',
             fotos:[

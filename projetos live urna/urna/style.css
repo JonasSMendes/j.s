@@ -150,3 +150,7 @@ body{
     border-top: 2px solid black;
     padding-left: 10px;
 }
+
+.aviso--grande{
+    font-size: 30px;
+}
