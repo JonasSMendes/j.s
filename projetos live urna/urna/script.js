@@ -85,22 +85,22 @@ function clicou(n){
     }
 }
 function branco(){
-        numero === ''
-        VTbranco = true
-        seuVotoPara.style.display = 'block'
-        aviso.style.display = 'block'
+        numero === '';
+        VTbranco = true;
+        seuVotoPara.style.display = 'block';
+        aviso.style.display = 'block';
         numeros.innerHTML = '';
         descricao.innerHTML = `<div class="aviso--grande pisca"> VOTO EM BRANCO</div>`
         lateral.innerHTML = '';
     
 }
 function corrige(){
-    comecarEtapa()
+    comecarEtapa();
 }
 function confirma(){
-    let etapa = etapas[etapaAtual]
+    let etapa = etapas[etapaAtual];
 
-    let VTconfirma = false
+    let VTconfirma = false;
 
     if( VTbranco === true ){
         VTconfirma = true
