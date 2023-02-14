@@ -157,3 +157,13 @@ body{
     font-size: 30px;
     text-align: center;
 }
+
+.aviso--Gigante{
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

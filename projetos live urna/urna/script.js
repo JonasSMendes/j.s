@@ -8,6 +8,7 @@ let numeros = document.querySelector('.d-1-3');
 let etapaAtual = 0;
 let numero = '';
 let VTbranco = false;
+let votos = [];
 
 function comecarEtapa(){
     let etapa = etapas[etapaAtual]
@@ -104,12 +105,17 @@ function confirma(){
 
     if( VTbranco === true ){
         VTconfirma = true
-    console.log('confirmando o branco');
-  //  descricao.innerHTML = `<div class="aviso--grande pisca"> VOTO COMPUTADO</div>`
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto: 'branco'
+        })
     }else if(numero.length === etapa.numeros){
         VTconfirma = true
-    console.log('confirmando o campo ' + numero)
-   // descricao.innerHTML = `<div class="aviso--grande pisca"> VOTO COMPUTADO</div>`
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto: numero
+        })
+  
     }
 
     if(VTconfirma){
@@ -117,7 +123,8 @@ function confirma(){
         if(etapas[etapaAtual] !== undefined){
             comecarEtapa()
         }else{
-            console.log('FIM')
+            document.querySelector('.tela').innerHTML = '<div class="aviso--Gigante pisca"> FIM </div>'
+            console.log(votos)
         }
     }
 }
