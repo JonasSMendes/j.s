@@ -7,14 +7,17 @@ let numeros = document.querySelector('.d-1-3');
 
 let etapaAtual = 0;
 let numero = '';
+let VTbranco = false;
 
 function comecarEtapa(){
     let etapa = etapas[etapaAtual]
 
     let numeroHtml = '';
+    numero = '';
+    VTbranco = false
 
-    for(let i = 0 ; i < etapa.numeros ;i++){
-        if(i === 0 ){
+    for(let i = 1 ; i < etapa.numeros ;i++){
+        if(i === 1 ){
             numeroHtml += '<div class="numero pisca"></div>'
         }
         numeroHtml += '<div class="numero"></div>'
@@ -60,7 +63,7 @@ function atualizaInterface(){
         descricao.innerHTML = `<div class="aviso--grande pisca"> VOTO NULO</div>`
     }
 
-    console.log('candidato', candidato)
+    
     
 
 }
@@ -82,13 +85,40 @@ function clicou(n){
     }
 }
 function branco(){
-    alert('clicou em branco')
+        numero === ''
+        VTbranco = true
+        seuVotoPara.style.display = 'block'
+        aviso.style.display = 'block'
+        numeros.innerHTML = '';
+        descricao.innerHTML = `<div class="aviso--grande pisca"> VOTO EM BRANCO</div>`
+        lateral.innerHTML = '';
+    
 }
 function corrige(){
-    alert('clicou em corrige')
+    comecarEtapa()
 }
 function confirma(){
- alert('cliou em confirme')
-}
+    let etapa = etapas[etapaAtual]
 
+    let VTconfirma = false
+
+    if( VTbranco === true ){
+        VTconfirma = true
+    console.log('confirmando o branco');
+  //  descricao.innerHTML = `<div class="aviso--grande pisca"> VOTO COMPUTADO</div>`
+    }else if(numero.length === etapa.numeros){
+        VTconfirma = true
+    console.log('confirmando o campo ' + numero)
+   // descricao.innerHTML = `<div class="aviso--grande pisca"> VOTO COMPUTADO</div>`
+    }
+
+    if(VTconfirma){
+        etapaAtual++;
+        if(etapas[etapaAtual] !== undefined){
+            comecarEtapa()
+        }else{
+            console.log('FIM')
+        }
+    }
+}
 comecarEtapa()
