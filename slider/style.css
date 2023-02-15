@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -10,8 +13,8 @@ header{
     background-color: #CCC;
 }
 .header{
-    height: 70px;
-    background-color: red;
+    height: 80px;
+    background-color: #fff;
 }
 .slide{
     flex: 1;
@@ -26,4 +29,19 @@ header{
 .slide--item{
     width: 100vw;
     height: inherit;
+    background-position: center;
+    
+}
+.slide--controler{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slide--control{
+    overflow: hidden;
+    font-size: 150px;
+    cursor: pointer;
 }
