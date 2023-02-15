@@ -14,7 +14,7 @@ header{
 }
 .header{
     height: 80px;
-    background-color: #fff;
+    background-color: #000;
 }
 .slide{
     flex: 1;
@@ -30,9 +30,18 @@ header{
     width: 100vw;
     height: inherit;
     background-position: center;
+    background-size: cover;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 1px 1px black;
+    font-size: 40px;
+    
     
 }
 .slide--controler{
+    height: 100%;
     position: absolute;
     z-index: 99;
     width: 100%;
@@ -42,6 +51,6 @@ header{
 }
 .slide--control{
     overflow: hidden;
-    font-size: 150px;
+    font-size: 100px;
     cursor: pointer;
 }
