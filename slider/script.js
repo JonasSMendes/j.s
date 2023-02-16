@@ -31,4 +31,4 @@ document.querySelector('.slide--controler').style.heigth =
      `-${newMargin}px`;
  }
 
- setInterval(gonext , 5000)
+ //setInterval(gonext , 5000)
