@@ -9,7 +9,34 @@
 </head>
 <body>
   
-    
+    <div class="acreen">
+        <div class="left-side">
+            <img src="./img/undraw_Online_test_re_kyfx.png"  alt="">
+        </div>
+        <div class="right-side">
+            <h1>Crie uma conta</h1>
+            <form class="Jvalidator" action="cadastro.php" method="post">
+                <label >
+                seu nome: <br>
+                <input type="text" name="name" data-rules="required|min=2">
+            </label>
+            <label >
+                seu Email: <br>
+                <input type="text" name="Email" data-rules="required|email">
+            </label>
+                <label >
+                sua Senha: <br>
+                <input type="password" name="password" data-rules="required|min=4">
+            </label>
+            <label>
+                <input type="submit" value="Cadastrar">
+            </label>
+            </form>
+            <div>
+                já tem uma conta? faça <a href=""> Login</a>
+            </div>
+        </div>
+    </div>
 
 
 <script src="./script.js"></script>
