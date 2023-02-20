@@ -1,5 +1,4 @@
 let char = new sorcerer('jonas')
+let monster = new litlemonster()
 
-console.log(char._life)
-console.log(char.attack)
-console.log(char.name)
+  
