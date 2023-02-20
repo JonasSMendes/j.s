@@ -7,6 +7,7 @@ class caracter{
     maxLife = 1
     attack = 0
     defense = 0
+    
 
     constructor(name){
         this.name = name
@@ -55,5 +56,27 @@ class bigMonster extends caracter{
         this.attack = 6;
         this.defense = 2;
         this.maxLife = this.life;
+    }
+}
+class Stage{
+    constructor(figther1, figther2, figther1El, figther2El){
+            this.figther1 = figther1
+            this.figther2 = figther2
+            this.figther1El = figther1El
+            this.figther2El = figther2El
+    }
+    start(){
+        this.update()
+        // evento do botão de atacar
+    }
+    update(){
+        //figther 1
+
+        this.figther1El.querySelector('.name').innerHTML= this.figther1.name;
+        
+        //figther2
+
+        this.figther2El.querySelector('.name').innerHTML= this.figther2.name;
+
     }
 }
