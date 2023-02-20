@@ -1,0 +1,28 @@
+.figtArea{
+    display: flex;
+    gap: 20px;
+
+}
+
+#char,#monster{
+    flex: 1;
+
+}
+
+.lifeBar{
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.lifeBar .bar{
+    height: inherit;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.log{
+    border: 1px dotted #999 ;
+    height: 300px;
+    overflow: scroll;
+}
