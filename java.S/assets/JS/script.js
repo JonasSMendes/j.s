@@ -2081,3 +2081,16 @@ function mostrar(){
     reader.readAsDataURL(imagem);
 }
 */
+
+function creatPerson(name,lastName,age){
+    return{
+        name,
+        lastName,
+        age
+    }
+}
+
+let Person1 = creatPerson('jonas','mendes',20)
+let person2 = creatPerson('pedro', 'silva', 30)
+
+console.log(person2.name)
