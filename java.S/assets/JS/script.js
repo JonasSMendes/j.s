@@ -2086,11 +2086,37 @@ function creatPerson(name,lastName,age){
     return{
         name,
         lastName,
-        age
+        age,
+        getfullname() {
+            return `${this.name} ${this.lastName} tem ${this.age} anos de idade`
+        }
     }
 }
 
 let Person1 = creatPerson('jonas','mendes',20)
-let person2 = creatPerson('pedro', 'silva', 30)
+let Person2 = creatPerson('pedro', 'silva', 30)
 
-console.log(person2.name)
+//console.log(Person1.getfullname())
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+const defaultUser = {
+    name:'',
+    email:'',
+    level: 1
+}
+
+const user1 = {
+    ...defaultUser,
+    name : 'jonas', 
+    email: 'suporte@eusoupigmail.com'
+}
+
+const adm1 = {
+    ...defaultUser,
+    name:'admboladão',
+    email:'admboldado@ola',
+    level: 100
+}
+
+console.log(adm1)
