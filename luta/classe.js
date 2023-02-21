@@ -132,3 +132,59 @@ class Log {
     }
 
 }
+
+/*
+const defaultCharacter = {
+    life: 1,
+    maxLife: 1,
+    name: '',
+    attack: 0,
+    defense: 0,
+}
+
+const creatKnight = (name) =>{
+    return{
+        ...defaultCharacter,
+        name: name,
+        life: 100,
+        maxLife:100,
+        attack: 10,
+        defense: 8,
+
+    }
+}
+const creatMage = (name) =>{
+    return{
+        ...defaultCharacter,
+        name: name,
+        life: 60,
+        maxLife:60,
+        attack: 18,
+        defense: 2,
+
+    }
+}
+const creatLittleMonster = () =>{
+    return{
+        ...defaultCharacter,
+        name: 'Little Monster',
+        life: 140,
+        maxLife:140,
+        attack: 2,
+        defense: 3,
+
+    }
+}
+const creatBigMonster = () =>{
+    return{
+        ...defaultCharacter,
+        name: 'Big Monster',
+        life: 200,
+        maxLife:200,
+        attack: 12,
+        defense: 1,
+
+    }
+}
+
+*/

@@ -1,3 +1,5 @@
+
+
 let log = new Log (document.querySelector('.log'))
 let monster = new bigMonster()
 let char = new sorcerer('Mago')
@@ -13,3 +15,10 @@ const stage = new Stage(
 );
 
 stage.start()
+
+
+/*
+const char = creatMage('jonas')
+const Monster = creatLittleMonster()
+
+*/
