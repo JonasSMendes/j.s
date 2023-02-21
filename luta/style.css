@@ -24,10 +24,14 @@
 
 .log{
     border: 1px dotted #999 ;
-    height: 500px;
+    height: 300px;
     overflow: scroll;
     background-image: url('./img/cenario.gif');
     background-size: cover;
     background-position: bottom;
 
+}
+ul li{
+    color: aliceblue;
+    list-style: none;
 }
