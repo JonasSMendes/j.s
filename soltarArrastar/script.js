@@ -22,13 +22,17 @@ function dragEnd(e){
 
 
 function dragOver(e){
-    e.preventDefault()
+    e.preventDefault();
+    e.currentTarget.classList.add('hover')
 }
-function dragLeave(){
+function dragLeave(e){
+    e.currentTarget.classList.remove('hover')
+}
+function drop(e){
+    e.currentTarget.classList.remove('hover')
+
+    let dragItem = document.querySelector('.item.dragging')
     
-}
-function drop(){
-    console.log('libera')
 }
 
 // funçoes area
