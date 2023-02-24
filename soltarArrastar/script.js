@@ -1,4 +1,6 @@
-document.querySelector('.neutralArea').addEventListener('click', neutraArea)
+document.querySelector('.neutralArea').addEventListener('dragover', neutraAreaOver)
+document.querySelector('.neutralArea').addEventListener('dragleave', neutraAreaLeave)
+document.querySelector('.neutralArea').addEventListener('drop', neutraAreaDrop)
 
 document.querySelectorAll('.item').forEach(item => {
     item.addEventListener('dragstart', dragStart),
@@ -22,8 +24,12 @@ function dragEnd(e){
 
 
 function dragOver(e){
-    e.preventDefault();
-    e.currentTarget.classList.add('hover')
+
+    if(e.currentTarget.querySelector('.item') === null){
+        e.preventDefault();
+        e.currentTarget.classList.add('hover')
+    }
+   
 }
 function dragLeave(e){
     e.currentTarget.classList.remove('hover')
@@ -33,9 +39,23 @@ function drop(e){
 
     let dragItem = document.querySelector('.item.dragging')
     
+    if(e.currentTarget.querySelector('.item') === null){
+        e.currentTarget.appendChild(dragItem);
+    }
 }
 
 // funçoes area
-function neutraArea(e){
+function neutraAreaLeave(e){
+    e.currentTarget.classList.remove('hover')
+}
+function neutraAreaDrop(e){
+    e.currentTarget.classList.remove('hover')
+    let dragItem = document.querySelector('.item.dragging')
+    e.currentTarget.appendChild(dragItem);
     
+}
+function neutraAreaOver(e){
+    e.preventDefault();
+   e.currentTarget.classList.add('hover')
+
 }
