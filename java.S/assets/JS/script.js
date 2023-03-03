@@ -2081,7 +2081,7 @@ function mostrar(){
     reader.readAsDataURL(imagem);
 }
 */
-
+/*
 function creatPerson(name,lastName,age){
     return{
         name,
@@ -2120,3 +2120,6 @@ const adm1 = {
 }
 
 console.log(adm1)
+
+*/
+
