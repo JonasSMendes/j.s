@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital,wght@0,200;1,100;1,300;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    
+}
+:root{
+    --clr: #222327;
+}
+body{
+    background-color: var(--clr);
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    flex: 1;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img_background img{
+    width: 250px;
+    height: 220px;
+}
+.description{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.description h2{
+    margin-bottom: 5px;
+}
+.durantion{
+    width: 250px;
+    margin-top: 20px;
+}
+.durantion progress{
+    height: 6px;
+    width: 50%;
+    background-color: #29fd53;
+}
+.bar{
+    width: 250px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.durantion .bar .point{
+    width: 10px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -2px;
+}
+.time{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.player{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.player .button-play, .button-pause{
+    font-size: 50px;
+    cursor: pointer;
+}
+.player .arrow{
+    font-size: 40px;
+    cursor: pointer;
+}
+.player .button-pause{
+    display: none;
+    cursor: pointer;
+}

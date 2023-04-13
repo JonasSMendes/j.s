@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio-spotfy</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="navegation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="musical-notes-outline"></ion-icon>
+                        </span>
+                        <span class="text">playlist</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="albums-outline"></ion-icon>
+                        </span>
+                        <span class="text">albuns</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Perfil</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="radio-outline"></ion-icon>
+                        </span>
+                        <span class="text">Radio</span>
+                    </a>
+                </li>
+                <div class="indicator">
+        
+                </div>
+            </ul>
+        </div>
+        </nav>
+        
+        
+
+<main> <!--main radio musica -->
+<div class="img_background">
+    <img src="./assets/img/lofi-girl-lofi.gif" width="200px" alt="error de imagem">
+</div>
+<div class="description">
+    <h2>nome da musica</h2>
+    <i>nome do artista</i>
+</div>
+<div class="durantion">
+    <div class="bar">
+        <progress value="0" max="1"></progress>
+        <div class="point"></div>
+    </div>
+    <div class="time">
+        <p class="start">0:00</p>
+        <p class="end">3:40</p>
+    </div>
+</div>
+<div class="player">
+    <ion-icon class="arrow" name="play-skip-back-outline"></ion-icon>
+    <ion-icon class="button-play" name="play-circle-outline"></ion-icon>
+    <ion-icon class="button-pause" name="pause-circle-outline"></ion-icon>
+    <ion-icon class="arrow" name="play-skip-forward-outline"></ion-icon>
+</div>
+
+<audio src="./assets/music/All I Am - Dyalla.mp3"></audio>
+</main>
+
+
+
+
+<script src="./js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

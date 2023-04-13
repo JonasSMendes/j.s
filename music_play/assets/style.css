@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Poppins',sans-serif;
+    
+
 }
 :root{
     --clr: #222327;
@@ -13,12 +15,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: end;
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: var(--clr);
+    color: #ccc;
+    
+}
+
+
+
+nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .navegation{
     position: relative;
-    width: 500px;
+    width: 350px;
     height: 70px;
     background-color: #fff;
     display: flex;
@@ -128,4 +142,79 @@ body{
 .navegation ul li:nth-child(5).active ~ .indicator {
 
     transform: translateX(calc(70px * 4));
+}
+
+/* tela 2 main */
+
+main{
+    flex: 1;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.img_background img{
+    width: 250px;
+    height: 220px;
+}
+.description{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.description h2{
+    margin-bottom: 5px;
+}
+.durantion{
+    width: 250px;
+    margin-top: 20px;
+}
+.durantion progress{
+    height: 6px;
+    width: 0%;
+    background-color: #29fd53;
+}
+.bar{
+    width: 250px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.durantion .bar .point{
+    width: 10px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -10px;
+    transition: 0.5;
+}
+.time{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.player{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.player .button-play, .button-pause{
+    font-size: 50px;
+    cursor: pointer;
+}
+.player .arrow{
+    font-size: 40px;
+    cursor: pointer;
+}
+.player .button-pause{
+    display: none;
+    cursor: pointer;
 }
