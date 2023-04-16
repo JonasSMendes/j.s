@@ -15,6 +15,8 @@ item.addEventListener('click',activeLink))
 
 
 
+//tela de home
+
 
 
 // radio play
@@ -55,8 +57,20 @@ const musicName = document.querySelector('.description h2');
 const singerName = document.querySelector('.description i');
 
 durationMusic.textContent = secondEdit(Math.floor(musica.duration));
+/*
+document.querySelector('.radio-outline').addEventListener('click', ()=>{
 
-
+    let id1 = document.querySelector('.id1');
+    let id5 = document.querySelector('.id5');
+    
+    if(id1.classList.contains('active') == true){
+        id1.removeAttribute('class');
+        id5.setAttribute('class','active');
+    }else{
+        id1.setAttribute('class','active')
+    }
+})
+*/
 // eventos
 document.querySelector('.button-play').addEventListener('click', playMusic);
 document.querySelector('.button-pause').addEventListener('click', pauseMusic);
@@ -96,7 +110,6 @@ function renderMusic(i){
         durationMusic.textContent = secondEdit(Math.floor(musica.duration));
     });
 }
-
 
 
 function playMusic(){

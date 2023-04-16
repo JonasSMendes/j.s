@@ -19,16 +19,20 @@ body{
     background-color: var(--clr);
     color: #ccc;
     
+    
 }
-
-
-
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+}
 nav{
     position: absolute;
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
+    bottom: 10px;
 }
 .navegation{
     position: relative;
@@ -91,6 +95,7 @@ nav{
 }
 .indicator{
     position: absolute;
+    right: 80%;
     top: -50%;
     width: 70px;
     height: 70px;
@@ -123,6 +128,7 @@ nav{
     box-shadow: -1px -10px 0 0 var(--clr);
 }
 
+
 .navegation ul li:nth-child(1).active ~ .indicator {
 
     transform: translateX(calc(70px * 0));
@@ -146,7 +152,7 @@ nav{
 
 /* tela 2 main */
 
-main{
+section{
     flex: 1;
     height: 90vh;
     display: flex;
