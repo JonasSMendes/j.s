@@ -1,20 +1,40 @@
-const fetchpokemon = () => {
-    const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
 
-    const pokemonpromisses = []
+const pokeApi = () =>{
+
+    const PokeApiUrl = (id) => `https://pokeapi.co/api/v2/pokemon/${id}`
 
 
-    for(let i = 1; i <= 150; i++){
-        fetch(getPokemonUrl(i)).then(Response => Response.json())
+    
 
+    const pokemonsPromisses = [];
+  
+    for(let i = 1; i <= 150; i++ ){
+      pokemonsPromisses.push(fetch(PokeApiUrl(i)).then(Response => Response.json())) 
     }
-    Promise.all(pokemonpromisses)
-        .then(pokemons => {
-            console.log(pokemons)
+    
+    Promise.all(pokemonsPromisses)
+    .then(pokemons => {
+      
+    const liPokemons = pokemons.reduce((accumulator, pokemon) => {
+    const types = pokemon.types.map(typesInfo => typesInfo.type.name)
 
-            const lisPokemons = pokemons.reduce()
-        })
+
+      accumulator += 
+      `
+      <li class="card">
+            <img class = "card-image" ${types[0]} alt="${pokemon.name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png" />
+            <h2 class = "card-title"> ${pokemon.id} ${pokemon.name} - </h2>
+            <p class ="card-subtitle"> ${types.join(' | ')} </p>
+      </li>
+      `
+      return accumulator
+    },'')
+
+    const ul = document.querySelector('[data-js = "pokedex"]')
+
+    ul.innerHTML = liPokemons
+  })
 }
 
 
-fetchpokemon()
+pokeApi()
